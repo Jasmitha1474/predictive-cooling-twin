@@ -1,0 +1,2278 @@
+{
+  "label": "preliminary: 13 small labelled jobs, no ML model yet",
+  "note": "Controller metrics are SIMULATED (twin driven by REAL measured power). Cooling-side twin parameters are ASSUMED; thermal inertia is fitted on real data. Not physical measurements.",
+  "traces": {
+    "n_series": 17,
+    "n_jobs": 13,
+    "total_seconds": 45451,
+    "series_ids": [
+      "1059916241808-r9352821-n851693:0:0",
+      "13296614245176-r3741709-n685852:0:0",
+      "17776331997312-r4858666-n43543:1:0",
+      "18170216283685-r9102715-n43543:0:0",
+      "23799851333110-r8937440-n685852:0:0",
+      "2645164483822-r2652301-n43543:0:0",
+      "28189127894967-r3226521-n830961:0:0",
+      "63609340612346-r1682297-n685852:0:0",
+      "63609340612346-r1682297-n685852:1:0",
+      "71137865433540-r9175025-n911952:0:0",
+      "71137865433540-r9175025-n911952:1:0",
+      "75592954051300-r7343737-n911952:0:0",
+      "75592954051300-r7343737-n911952:1:0",
+      "80369538726812-r9352821-n386398:0:0",
+      "81833680739615-r9175025-n851693:0:0",
+      "90770026313357-r6760045-n830961:0:0",
+      "90770026313357-r6760045-n830961:1:0"
+    ],
+    "labels": {
+      "U3-128": 1,
+      "U3-32": 1,
+      "U3-64": 1,
+      "U4-128": 1,
+      "U4-32": 1,
+      "U4-64": 2,
+      "U5-128": 1,
+      "U5-32": 1,
+      "U5-64": 1,
+      "distilbert-base-uncased": 2,
+      "inception3": 1,
+      "pna": 2,
+      "resnet50": 2
+    },
+    "split_used": "all"
+  },
+  "calibration": {
+    "tau_s": 25,
+    "rmse_C": 3.94323041578322,
+    "T_amb_C": 39.26883117985186,
+    "R_K_per_W": 0.15034802955467755,
+    "C_total_J_per_K": 166.2808623036072,
+    "n_series": 17,
+    "n_seconds": 45451,
+    "grid": [
+      {
+        "tau_s": 5,
+        "rmse_C": 4.259554337940964,
+        "T_amb_C": 40.13856813695724,
+        "R_K_per_W": 0.14364473658996332
+      },
+      {
+        "tau_s": 10,
+        "rmse_C": 4.098994367041221,
+        "T_amb_C": 39.72002112197073,
+        "R_K_per_W": 0.14667775836030192
+      },
+      {
+        "tau_s": 15,
+        "rmse_C": 4.0095055822355095,
+        "T_amb_C": 39.48408876072033,
+        "R_K_per_W": 0.14847750222254458
+      },
+      {
+        "tau_s": 20,
+        "rmse_C": 3.9622400910398876,
+        "T_amb_C": 39.344744511199316,
+        "R_K_per_W": 0.1496264020858954
+      },
+      {
+        "tau_s": 25,
+        "rmse_C": 3.94323041578322,
+        "T_amb_C": 39.26883117985186,
+        "R_K_per_W": 0.15034802955467755
+      },
+      {
+        "tau_s": 30,
+        "rmse_C": 3.9435673415676775,
+        "T_amb_C": 39.23833150016196,
+        "R_K_per_W": 0.1507638137063217
+      },
+      {
+        "tau_s": 40,
+        "rmse_C": 3.979678899983304,
+        "T_amb_C": 39.27119459822492,
+        "R_K_per_W": 0.1509637149838191
+      },
+      {
+        "tau_s": 50,
+        "rmse_C": 4.040481926784044,
+        "T_amb_C": 39.38664020998774,
+        "R_K_per_W": 0.1506083904543919
+      },
+      {
+        "tau_s": 60,
+        "rmse_C": 4.110967868726681,
+        "T_amb_C": 39.55368110917889,
+        "R_K_per_W": 0.1499059929316022
+      },
+      {
+        "tau_s": 90,
+        "rmse_C": 4.323073024327314,
+        "T_amb_C": 40.205271519729976,
+        "R_K_per_W": 0.14677604158925472
+      },
+      {
+        "tau_s": 120,
+        "rmse_C": 4.506550504345208,
+        "T_amb_C": 40.922597020050084,
+        "R_K_per_W": 0.14317083571530706
+      },
+      {
+        "tau_s": 180,
+        "rmse_C": 4.801388446301369,
+        "T_amb_C": 42.275174412042226,
+        "R_K_per_W": 0.13639902310993907
+      },
+      {
+        "tau_s": 240,
+        "rmse_C": 5.044554022060441,
+        "T_amb_C": 43.44466293796896,
+        "R_K_per_W": 0.1307497221328411
+      }
+    ]
+  },
+  "calibration_split": "all",
+  "twin_params": {
+    "C_total_J_per_K": 166.2808623036072,
+    "die_fraction": 0.1,
+    "R_jc_K_per_W": 0.05,
+    "T_sat_C": 35.0,
+    "h_fg_J_per_kg": 190000.0,
+    "G0_W_per_K": 0.0,
+    "G1_W_per_K": 33.0,
+    "G_exp": 0.7,
+    "rho_kg_per_L": 1.2,
+    "x_max": 0.8,
+    "k_dry": 0.5,
+    "Q_min_Lpm": 0.5,
+    "Q_max_Lpm": 6.0,
+    "tau_valve_s": 5.0,
+    "valve_rate_max_per_s": 0.2,
+    "transport_delay_s": 5.0,
+    "k_pump": 1.0,
+    "dt_s": 0.1
+  },
+  "settings": {
+    "T_threshold_C": 59.1,
+    "hysteresis_C": 3.0,
+    "v_min": 0.2,
+    "dv_up": 0.1,
+    "dv_down": 0.02,
+    "margin_C": 2.0,
+    "kp": 0.08,
+    "ki": 0.004,
+    "candidates": 11
+  },
+  "threshold_rule": "steady-state T_j at 250 W with valve 0.5",
+  "forecasters": [
+    "persistence",
+    "oracle"
+  ],
+  "summary": {
+    "reactive_threshold": {
+      "peak_Tj_C": {
+        "median": 57.75051647226708,
+        "total": null
+      },
+      "overshoot_C": {
+        "median": 0.0,
+        "total": null
+      },
+      "time_above_threshold_s": {
+        "median": 0.0,
+        "total": 1281.0
+      },
+      "mean_cooling_demand": {
+        "median": 0.2,
+        "total": null
+      },
+      "est_pump_energy_rel": {
+        "median": 10649.600000004351,
+        "total": 741407.5882676509
+      },
+      "Tj_std_C": {
+        "median": 4.364962393688159,
+        "total": null
+      },
+      "valve_reversals": {
+        "median": 0.0,
+        "total": null
+      },
+      "response_time_median_s": {
+        "median": 51.5,
+        "total": null
+      },
+      "est_pump_energy_vs_baseline_ratio": 1.0
+    },
+    "reactive_pi": {
+      "peak_Tj_C": {
+        "median": 57.44945001171206,
+        "total": null,
+        "diff_vs_baseline_median": -0.278014696531514,
+        "diff_iqr": [
+          -0.9701178649720603,
+          0.0
+        ],
+        "n_paired": 17,
+        "wilcoxon_p": 0.00390625
+      },
+      "overshoot_C": {
+        "median": 0.0,
+        "total": null,
+        "diff_vs_baseline_median": 0.0,
+        "diff_iqr": [
+          -0.5804224800957982,
+          0.0
+        ],
+        "n_paired": 17,
+        "wilcoxon_p": null
+      },
+      "time_above_threshold_s": {
+        "median": 0.0,
+        "total": 1.0,
+        "diff_vs_baseline_median": 0.0,
+        "diff_iqr": [
+          -81.0,
+          0.0
+        ],
+        "n_paired": 17,
+        "wilcoxon_p": null
+      },
+      "mean_cooling_demand": {
+        "median": 0.20354456107159102,
+        "total": null,
+        "diff_vs_baseline_median": 0.0,
+        "diff_iqr": [
+          -0.046026006997142044,
+          0.0
+        ],
+        "n_paired": 17,
+        "wilcoxon_p": 0.1640625
+      },
+      "est_pump_energy_rel": {
+        "median": 10649.600000004351,
+        "total": 286742.481437364,
+        "diff_vs_baseline_median": 0.0,
+        "diff_iqr": [
+          -19356.951799327675,
+          0.0
+        ],
+        "n_paired": 17,
+        "wilcoxon_p": 0.1640625
+      },
+      "Tj_std_C": {
+        "median": 4.026871414548965,
+        "total": null,
+        "diff_vs_baseline_median": 0.0,
+        "diff_iqr": [
+          -0.12021670370323179,
+          0.0
+        ],
+        "n_paired": 17,
+        "wilcoxon_p": 0.0390625
+      },
+      "valve_reversals": {
+        "median": 455.0,
+        "total": null,
+        "diff_vs_baseline_median": 455.0,
+        "diff_iqr": [
+          0.0,
+          1309.0
+        ],
+        "n_paired": 17,
+        "wilcoxon_p": 0.00390625
+      },
+      "response_time_median_s": {
+        "median": 34.5,
+        "total": null,
+        "diff_vs_baseline_median": -17.0,
+        "diff_iqr": [
+          -17.5,
+          -10.0
+        ],
+        "n_paired": 5,
+        "wilcoxon_p": null
+      },
+      "est_pump_energy_vs_baseline_ratio": 0.38675417675095186
+    },
+    "predictive_persistence": {
+      "peak_Tj_C": {
+        "median": 56.51135010420633,
+        "total": null,
+        "diff_vs_baseline_median": -1.3570566783645077,
+        "diff_iqr": [
+          -2.6540935485884702,
+          0.0
+        ],
+        "n_paired": 17,
+        "wilcoxon_p": 0.0009765625
+      },
+      "overshoot_C": {
+        "median": 0.0,
+        "total": null,
+        "diff_vs_baseline_median": 0.0,
+        "diff_iqr": [
+          -0.5804224800957982,
+          0.0
+        ],
+        "n_paired": 17,
+        "wilcoxon_p": null
+      },
+      "time_above_threshold_s": {
+        "median": 0.0,
+        "total": 0.0,
+        "diff_vs_baseline_median": 0.0,
+        "diff_iqr": [
+          -81.0,
+          0.0
+        ],
+        "n_paired": 17,
+        "wilcoxon_p": null
+      },
+      "mean_cooling_demand": {
+        "median": 0.2356957649092481,
+        "total": null,
+        "diff_vs_baseline_median": 0.0,
+        "diff_iqr": [
+          0.0,
+          0.008810068649885594
+        ],
+        "n_paired": 17,
+        "wilcoxon_p": 0.5771484375
+      },
+      "est_pump_energy_rel": {
+        "median": 12255.012458364059,
+        "total": 397284.3935862447,
+        "diff_vs_baseline_median": 0.0,
+        "diff_iqr": [
+          -11801.449611571097,
+          691.8598921948451
+        ],
+        "n_paired": 17,
+        "wilcoxon_p": 0.3203125
+      },
+      "Tj_std_C": {
+        "median": 3.724026555388496,
+        "total": null,
+        "diff_vs_baseline_median": -0.2000053660800447,
+        "diff_iqr": [
+          -0.535555000754071,
+          0.0
+        ],
+        "n_paired": 17,
+        "wilcoxon_p": 0.0009765625
+      },
+      "valve_reversals": {
+        "median": 617.0,
+        "total": null,
+        "diff_vs_baseline_median": 578.0,
+        "diff_iqr": [
+          0.0,
+          1259.0
+        ],
+        "n_paired": 17,
+        "wilcoxon_p": 0.0009765625
+      },
+      "response_time_median_s": {
+        "median": 33.0,
+        "total": null,
+        "diff_vs_baseline_median": -19.0,
+        "diff_iqr": [
+          -21.5,
+          -18.5
+        ],
+        "n_paired": 5,
+        "wilcoxon_p": null
+      },
+      "est_pump_energy_vs_baseline_ratio": 0.535851534126494
+    },
+    "predictive_oracle": {
+      "peak_Tj_C": {
+        "median": 56.80680635058094,
+        "total": null,
+        "diff_vs_baseline_median": -0.536875677974173,
+        "diff_iqr": [
+          -1.3487201150124335,
+          0.0
+        ],
+        "n_paired": 17,
+        "wilcoxon_p": 0.0009765625
+      },
+      "overshoot_C": {
+        "median": 0.0,
+        "total": null,
+        "diff_vs_baseline_median": 0.0,
+        "diff_iqr": [
+          -0.5804224800957982,
+          0.0
+        ],
+        "n_paired": 17,
+        "wilcoxon_p": null
+      },
+      "time_above_threshold_s": {
+        "median": 0.0,
+        "total": 0.0,
+        "diff_vs_baseline_median": 0.0,
+        "diff_iqr": [
+          -81.0,
+          0.0
+        ],
+        "n_paired": 17,
+        "wilcoxon_p": null
+      },
+      "mean_cooling_demand": {
+        "median": 0.25566119273984445,
+        "total": null,
+        "diff_vs_baseline_median": 0.0,
+        "diff_iqr": [
+          0.0,
+          0.020010822510822535
+        ],
+        "n_paired": 17,
+        "wilcoxon_p": 0.3203125
+      },
+      "est_pump_energy_rel": {
+        "median": 14413.032920364109,
+        "total": 449130.9782999182,
+        "diff_vs_baseline_median": 0.0,
+        "diff_iqr": [
+          -9913.137120911277,
+          682.2015409819987
+        ],
+        "n_paired": 17,
+        "wilcoxon_p": 0.365234375
+      },
+      "Tj_std_C": {
+        "median": 3.6886946379209187,
+        "total": null,
+        "diff_vs_baseline_median": -0.22246667780447016,
+        "diff_iqr": [
+          -0.6523621425918829,
+          0.0
+        ],
+        "n_paired": 17,
+        "wilcoxon_p": 0.0009765625
+      },
+      "valve_reversals": {
+        "median": 381.0,
+        "total": null,
+        "diff_vs_baseline_median": 381.0,
+        "diff_iqr": [
+          0.0,
+          585.0
+        ],
+        "n_paired": 17,
+        "wilcoxon_p": 0.0009765625
+      },
+      "response_time_median_s": {
+        "median": 41.0,
+        "total": null,
+        "diff_vs_baseline_median": -5.5,
+        "diff_iqr": [
+          -9.5,
+          -5.0
+        ],
+        "n_paired": 5,
+        "wilcoxon_p": null
+      },
+      "est_pump_energy_vs_baseline_ratio": 0.6057814694739545
+    }
+  },
+  "per_trace": {
+    "1059916241808-r9352821-n851693:0:0": {
+      "reactive_threshold": {
+        "peak_Tj_C": 60.00829279947157,
+        "overshoot_C": 0.9082927994715675,
+        "time_above_threshold_s": 411.0,
+        "mean_cooling_demand": 0.45341140750379516,
+        "est_pump_energy_rel": 213274.5623550709,
+        "Tj_std_C": 4.557063086829797,
+        "valve_reversals": 103,
+        "n_power_events": 10,
+        "n_events_with_response": 10,
+        "response_time_median_s": 43.0,
+        "duration_s": 4611
+      },
+      "reactive_pi": {
+        "peak_Tj_C": 58.80907225216032,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.3035343289372194,
+        "est_pump_energy_rel": 48326.15200052167,
+        "Tj_std_C": 4.230835058235984,
+        "valve_reversals": 2909,
+        "n_power_events": 10,
+        "n_events_with_response": 9,
+        "response_time_median_s": 33.0,
+        "duration_s": 4611
+      },
+      "predictive_persistence": {
+        "peak_Tj_C": 56.95900932900364,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.3560182173064411,
+        "est_pump_energy_rel": 70883.63933763273,
+        "Tj_std_C": 3.957246356620206,
+        "valve_reversals": 2685,
+        "n_power_events": 10,
+        "n_events_with_response": 7,
+        "response_time_median_s": 24.0,
+        "duration_s": 4611
+      },
+      "predictive_oracle": {
+        "peak_Tj_C": 57.95186906252589,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.3799392756451962,
+        "est_pump_energy_rel": 82783.59229590255,
+        "Tj_std_C": 3.904700944237914,
+        "valve_reversals": 619,
+        "n_power_events": 10,
+        "n_events_with_response": 1,
+        "response_time_median_s": 48.0,
+        "duration_s": 4611
+      }
+    },
+    "13296614245176-r3741709-n685852:0:0": {
+      "reactive_threshold": {
+        "peak_Tj_C": 52.74113873124673,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.19999999999999998,
+        "est_pump_energy_rel": 17416.192000014045,
+        "Tj_std_C": 2.8344409605279357,
+        "valve_reversals": 0,
+        "n_power_events": 30,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 4252
+      },
+      "reactive_pi": {
+        "peak_Tj_C": 52.74113873124673,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.19999999999999998,
+        "est_pump_energy_rel": 17416.192000014045,
+        "Tj_std_C": 2.8344409605279357,
+        "valve_reversals": 0,
+        "n_power_events": 30,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 4252
+      },
+      "predictive_persistence": {
+        "peak_Tj_C": 52.74113873124673,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.19999999999999998,
+        "est_pump_energy_rel": 17416.192000014045,
+        "Tj_std_C": 2.8344409605279357,
+        "valve_reversals": 0,
+        "n_power_events": 30,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 4252
+      },
+      "predictive_oracle": {
+        "peak_Tj_C": 52.74113873124673,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.19999999999999998,
+        "est_pump_energy_rel": 17416.192000014045,
+        "Tj_std_C": 2.8344409605279357,
+        "valve_reversals": 0,
+        "n_power_events": 30,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 4252
+      }
+    },
+    "17776331997312-r4858666-n43543:1:0": {
+      "reactive_threshold": {
+        "peak_Tj_C": 51.844101776529044,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.19999999999999998,
+        "est_pump_energy_rel": 5521.407999999459,
+        "Tj_std_C": 4.860232891676671,
+        "valve_reversals": 0,
+        "n_power_events": 3,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 1348
+      },
+      "reactive_pi": {
+        "peak_Tj_C": 51.844101776529044,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.19999999999999998,
+        "est_pump_energy_rel": 5521.407999999459,
+        "Tj_std_C": 4.860232891676671,
+        "valve_reversals": 0,
+        "n_power_events": 3,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 1348
+      },
+      "predictive_persistence": {
+        "peak_Tj_C": 51.844101776529044,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.19999999999999998,
+        "est_pump_energy_rel": 5521.407999999459,
+        "Tj_std_C": 4.860232891676671,
+        "valve_reversals": 0,
+        "n_power_events": 3,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 1348
+      },
+      "predictive_oracle": {
+        "peak_Tj_C": 51.844101776529044,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.19999999999999998,
+        "est_pump_energy_rel": 5521.407999999459,
+        "Tj_std_C": 4.860232891676671,
+        "valve_reversals": 0,
+        "n_power_events": 3,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 1348
+      }
+    },
+    "18170216283685-r9102715-n43543:0:0": {
+      "reactive_threshold": {
+        "peak_Tj_C": 57.75051647226708,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.19999999999999998,
+        "est_pump_energy_rel": 4739.071999999545,
+        "Tj_std_C": 6.441692747352534,
+        "valve_reversals": 0,
+        "n_power_events": 4,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 1157
+      },
+      "reactive_pi": {
+        "peak_Tj_C": 57.44945001171206,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.20354456107159102,
+        "est_pump_energy_rel": 4916.561534036921,
+        "Tj_std_C": 6.385207502725577,
+        "valve_reversals": 455,
+        "n_power_events": 4,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 1157
+      },
+      "predictive_persistence": {
+        "peak_Tj_C": 56.31804156844498,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.2356957649092481,
+        "est_pump_energy_rel": 6791.638601174294,
+        "Tj_std_C": 5.929150183066424,
+        "valve_reversals": 655,
+        "n_power_events": 4,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 1157
+      },
+      "predictive_oracle": {
+        "peak_Tj_C": 57.21364079429291,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.25566119273984445,
+        "est_pump_energy_rel": 8312.227290775838,
+        "Tj_std_C": 5.721658047243844,
+        "valve_reversals": 381,
+        "n_power_events": 4,
+        "n_events_with_response": 1,
+        "response_time_median_s": 29.0,
+        "duration_s": 1157
+      }
+    },
+    "23799851333110-r8937440-n685852:0:0": {
+      "reactive_threshold": {
+        "peak_Tj_C": 59.6804224800958,
+        "overshoot_C": 0.5804224800957982,
+        "time_above_threshold_s": 172.0,
+        "mean_cooling_demand": 0.32484455258177886,
+        "est_pump_energy_rel": 66965.24873689807,
+        "Tj_std_C": 4.364962393688159,
+        "valve_reversals": 81,
+        "n_power_events": 5,
+        "n_events_with_response": 4,
+        "response_time_median_s": 51.5,
+        "duration_s": 3699
+      },
+      "reactive_pi": {
+        "peak_Tj_C": 58.61062965497836,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.27165087051441034,
+        "est_pump_energy_rel": 29752.27551745243,
+        "Tj_std_C": 4.026871414548965,
+        "valve_reversals": 2403,
+        "n_power_events": 5,
+        "n_events_with_response": 3,
+        "response_time_median_s": 34.0,
+        "duration_s": 3699
+      },
+      "predictive_persistence": {
+        "peak_Tj_C": 57.02632893150733,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.32816977561503113,
+        "est_pump_energy_rel": 46559.19513550978,
+        "Tj_std_C": 3.724026555388496,
+        "valve_reversals": 1917,
+        "n_power_events": 5,
+        "n_events_with_response": 4,
+        "response_time_median_s": 33.0,
+        "duration_s": 3699
+      },
+      "predictive_oracle": {
+        "peak_Tj_C": 57.41246136776225,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.3384157880508246,
+        "est_pump_energy_rel": 49709.421812447836,
+        "Tj_std_C": 3.6886946379209187,
+        "valve_reversals": 2039,
+        "n_power_events": 5,
+        "n_events_with_response": 1,
+        "response_time_median_s": 42.0,
+        "duration_s": 3699
+      }
+    },
+    "2645164483822-r2652301-n43543:0:0": {
+      "reactive_threshold": {
+        "peak_Tj_C": 58.155526465593375,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.20000000000000004,
+        "est_pump_energy_rel": 8048.639999999181,
+        "Tj_std_C": 6.391075253182416,
+        "valve_reversals": 0,
+        "n_power_events": 10,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 1965
+      },
+      "reactive_pi": {
+        "peak_Tj_C": 57.66452957361807,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.208337699042675,
+        "est_pump_energy_rel": 8778.143804921387,
+        "Tj_std_C": 6.270858549479184,
+        "valve_reversals": 577,
+        "n_power_events": 10,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 1965
+      },
+      "predictive_persistence": {
+        "peak_Tj_C": 56.757212594632776,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.24193384223918576,
+        "est_pump_energy_rel": 12255.012458364059,
+        "Tj_std_C": 5.855520252428345,
+        "valve_reversals": 727,
+        "n_power_events": 10,
+        "n_events_with_response": 3,
+        "response_time_median_s": 50.0,
+        "duration_s": 1965
+      },
+      "predictive_oracle": {
+        "peak_Tj_C": 56.80680635058094,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.259236641221374,
+        "est_pump_energy_rel": 14413.032920364109,
+        "Tj_std_C": 5.67474148397201,
+        "valve_reversals": 519,
+        "n_power_events": 10,
+        "n_events_with_response": 1,
+        "response_time_median_s": 48.0,
+        "duration_s": 1965
+      }
+    },
+    "28189127894967-r3226521-n830961:0:0": {
+      "reactive_threshold": {
+        "peak_Tj_C": 58.718407753467126,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.20000000000000004,
+        "est_pump_energy_rel": 14057.472000011543,
+        "Tj_std_C": 3.7197695574340046,
+        "valve_reversals": 0,
+        "n_power_events": 29,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 3432
+      },
+      "reactive_pi": {
+        "peak_Tj_C": 58.0658298100117,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.21719509054507374,
+        "est_pump_energy_rel": 16848.157096877214,
+        "Tj_std_C": 3.6029038170870433,
+        "valve_reversals": 1309,
+        "n_power_events": 29,
+        "n_events_with_response": 5,
+        "response_time_median_s": 35.0,
+        "duration_s": 3432
+      },
+      "predictive_persistence": {
+        "peak_Tj_C": 56.77076434192683,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.26142191142191146,
+        "est_pump_energy_rel": 25348.09305037965,
+        "Tj_std_C": 3.3920599332736985,
+        "valve_reversals": 1259,
+        "n_power_events": 29,
+        "n_events_with_response": 14,
+        "response_time_median_s": 37.0,
+        "duration_s": 3432
+      },
+      "predictive_oracle": {
+        "peak_Tj_C": 57.45346256102199,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.28164335664335666,
+        "est_pump_energy_rel": 31050.297003764583,
+        "Tj_std_C": 3.478764583016919,
+        "valve_reversals": 745,
+        "n_power_events": 29,
+        "n_events_with_response": 11,
+        "response_time_median_s": 41.0,
+        "duration_s": 3432
+      }
+    },
+    "63609340612346-r1682297-n685852:0:0": {
+      "reactive_threshold": {
+        "peak_Tj_C": 56.885860627855195,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.2,
+        "est_pump_energy_rel": 7159.807999999279,
+        "Tj_std_C": 4.9749113897562935,
+        "valve_reversals": 0,
+        "n_power_events": 7,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 1748
+      },
+      "reactive_pi": {
+        "peak_Tj_C": 56.885860627855195,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.2,
+        "est_pump_energy_rel": 7159.807999999279,
+        "Tj_std_C": 4.9749113897562935,
+        "valve_reversals": 0,
+        "n_power_events": 7,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 1748
+      },
+      "predictive_persistence": {
+        "peak_Tj_C": 56.51135010420633,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.2088100686498856,
+        "est_pump_energy_rel": 7851.667892194124,
+        "Tj_std_C": 4.869349071510881,
+        "valve_reversals": 305,
+        "n_power_events": 7,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 1748
+      },
+      "predictive_oracle": {
+        "peak_Tj_C": 56.57173571030904,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.20869565217391306,
+        "est_pump_energy_rel": 7842.0095409812775,
+        "Tj_std_C": 4.8674932550681,
+        "valve_reversals": 303,
+        "n_power_events": 7,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 1748
+      }
+    },
+    "63609340612346-r1682297-n685852:1:0": {
+      "reactive_threshold": {
+        "peak_Tj_C": 56.745435210120895,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.2,
+        "est_pump_energy_rel": 7159.807999999279,
+        "Tj_std_C": 5.123502808977001,
+        "valve_reversals": 0,
+        "n_power_events": 7,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 1748
+      },
+      "reactive_pi": {
+        "peak_Tj_C": 56.745435210120895,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.2,
+        "est_pump_energy_rel": 7159.807999999279,
+        "Tj_std_C": 5.123502808977001,
+        "valve_reversals": 0,
+        "n_power_events": 7,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 1748
+      },
+      "predictive_persistence": {
+        "peak_Tj_C": 56.458299032685105,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.20537757437070941,
+        "est_pump_energy_rel": 7580.8063556203815,
+        "Tj_std_C": 5.0619746751538015,
+        "valve_reversals": 187,
+        "n_power_events": 7,
+        "n_events_with_response": 1,
+        "response_time_median_s": 33.0,
+        "duration_s": 1748
+      },
+      "predictive_oracle": {
+        "peak_Tj_C": 56.42518714047813,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.20411899313501147,
+        "est_pump_energy_rel": 7480.427936548022,
+        "Tj_std_C": 5.0739849705268725,
+        "valve_reversals": 143,
+        "n_power_events": 7,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 1748
+      }
+    },
+    "71137865433540-r9175025-n911952:0:0": {
+      "reactive_threshold": {
+        "peak_Tj_C": 43.8754402607559,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.2,
+        "est_pump_energy_rel": 10649.600000004351,
+        "Tj_std_C": 0.42502175802521197,
+        "valve_reversals": 0,
+        "n_power_events": 0,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 2600
+      },
+      "reactive_pi": {
+        "peak_Tj_C": 43.8754402607559,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.2,
+        "est_pump_energy_rel": 10649.600000004351,
+        "Tj_std_C": 0.42502175802521197,
+        "valve_reversals": 0,
+        "n_power_events": 0,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 2600
+      },
+      "predictive_persistence": {
+        "peak_Tj_C": 43.8754402607559,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.2,
+        "est_pump_energy_rel": 10649.600000004351,
+        "Tj_std_C": 0.42502175802521197,
+        "valve_reversals": 0,
+        "n_power_events": 0,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 2600
+      },
+      "predictive_oracle": {
+        "peak_Tj_C": 43.8754402607559,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.2,
+        "est_pump_energy_rel": 10649.600000004351,
+        "Tj_std_C": 0.42502175802521197,
+        "valve_reversals": 0,
+        "n_power_events": 0,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 2600
+      }
+    },
+    "71137865433540-r9175025-n911952:1:0": {
+      "reactive_threshold": {
+        "peak_Tj_C": 44.99617456513503,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.2,
+        "est_pump_energy_rel": 10649.600000004351,
+        "Tj_std_C": 0.9698654980806255,
+        "valve_reversals": 0,
+        "n_power_events": 0,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 2600
+      },
+      "reactive_pi": {
+        "peak_Tj_C": 44.99617456513503,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.2,
+        "est_pump_energy_rel": 10649.600000004351,
+        "Tj_std_C": 0.9698654980806255,
+        "valve_reversals": 0,
+        "n_power_events": 0,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 2600
+      },
+      "predictive_persistence": {
+        "peak_Tj_C": 44.99617456513503,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.2,
+        "est_pump_energy_rel": 10649.600000004351,
+        "Tj_std_C": 0.9698654980806255,
+        "valve_reversals": 0,
+        "n_power_events": 0,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 2600
+      },
+      "predictive_oracle": {
+        "peak_Tj_C": 44.99617456513503,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.2,
+        "est_pump_energy_rel": 10649.600000004351,
+        "Tj_std_C": 0.9698654980806255,
+        "valve_reversals": 0,
+        "n_power_events": 0,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 2600
+      }
+    },
+    "75592954051300-r7343737-n911952:0:0": {
+      "reactive_threshold": {
+        "peak_Tj_C": 48.19732493119969,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.19999999999999998,
+        "est_pump_energy_rel": 9220.096000001335,
+        "Tj_std_C": 1.4287551888464638,
+        "valve_reversals": 0,
+        "n_power_events": 2,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 2251
+      },
+      "reactive_pi": {
+        "peak_Tj_C": 48.19732493119969,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.19999999999999998,
+        "est_pump_energy_rel": 9220.096000001335,
+        "Tj_std_C": 1.4287551888464638,
+        "valve_reversals": 0,
+        "n_power_events": 2,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 2251
+      },
+      "predictive_persistence": {
+        "peak_Tj_C": 48.19732493119969,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.19999999999999998,
+        "est_pump_energy_rel": 9220.096000001335,
+        "Tj_std_C": 1.4287551888464638,
+        "valve_reversals": 0,
+        "n_power_events": 2,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 2251
+      },
+      "predictive_oracle": {
+        "peak_Tj_C": 48.19732493119969,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.19999999999999998,
+        "est_pump_energy_rel": 9220.096000001335,
+        "Tj_std_C": 1.4287551888464638,
+        "valve_reversals": 0,
+        "n_power_events": 2,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 2251
+      }
+    },
+    "75592954051300-r7343737-n911952:1:0": {
+      "reactive_threshold": {
+        "peak_Tj_C": 49.448149527590274,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.19999999999999998,
+        "est_pump_energy_rel": 9220.096000001335,
+        "Tj_std_C": 1.5893348086096593,
+        "valve_reversals": 0,
+        "n_power_events": 4,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 2251
+      },
+      "reactive_pi": {
+        "peak_Tj_C": 49.448149527590274,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.19999999999999998,
+        "est_pump_energy_rel": 9220.096000001335,
+        "Tj_std_C": 1.5893348086096593,
+        "valve_reversals": 0,
+        "n_power_events": 4,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 2251
+      },
+      "predictive_persistence": {
+        "peak_Tj_C": 49.448149527590274,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.19999999999999998,
+        "est_pump_energy_rel": 9220.096000001335,
+        "Tj_std_C": 1.5893348086096593,
+        "valve_reversals": 0,
+        "n_power_events": 4,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 2251
+      },
+      "predictive_oracle": {
+        "peak_Tj_C": 49.448149527590274,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.19999999999999998,
+        "est_pump_energy_rel": 9220.096000001335,
+        "Tj_std_C": 1.5893348086096593,
+        "valve_reversals": 0,
+        "n_power_events": 4,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 2251
+      }
+    },
+    "80369538726812-r9352821-n386398:0:0": {
+      "reactive_threshold": {
+        "peak_Tj_C": 60.118435271688675,
+        "overshoot_C": 1.0184352716886735,
+        "time_above_threshold_s": 251.0,
+        "mean_cooling_demand": 0.36445969884853846,
+        "est_pump_energy_rel": 129088.63942796341,
+        "Tj_std_C": 6.6000601426474566,
+        "valve_reversals": 77,
+        "n_power_events": 11,
+        "n_events_with_response": 10,
+        "response_time_median_s": 58.0,
+        "duration_s": 4516
+      },
+      "reactive_pi": {
+        "peak_Tj_C": 59.148317406716615,
+        "overshoot_C": 0.04831740671661322,
+        "time_above_threshold_s": 1.0,
+        "mean_cooling_demand": 0.27681200669548556,
+        "est_pump_energy_rel": 39308.33080903954,
+        "Tj_std_C": 6.804432960307599,
+        "valve_reversals": 1781,
+        "n_power_events": 11,
+        "n_events_with_response": 11,
+        "response_time_median_s": 41.0,
+        "duration_s": 4516
+      },
+      "predictive_persistence": {
+        "peak_Tj_C": 57.13727285895436,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.33259521700620015,
+        "est_pump_energy_rel": 62874.47673708685,
+        "Tj_std_C": 6.292517135570864,
+        "valve_reversals": 1801,
+        "n_power_events": 11,
+        "n_events_with_response": 10,
+        "response_time_median_s": 36.5,
+        "duration_s": 4516
+      },
+      "predictive_oracle": {
+        "peak_Tj_C": 58.373116422433206,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.3576616474756421,
+        "est_pump_energy_rel": 76943.15416301135,
+        "Tj_std_C": 6.377593464842986,
+        "valve_reversals": 1603,
+        "n_power_events": 11,
+        "n_events_with_response": 9,
+        "response_time_median_s": 36.0,
+        "duration_s": 4516
+      }
+    },
+    "81833680739615-r9175025-n851693:0:0": {
+      "reactive_threshold": {
+        "peak_Tj_C": 60.19924493454384,
+        "overshoot_C": 1.0992449345438402,
+        "time_above_threshold_s": 366.0,
+        "mean_cooling_demand": 0.4740229242381883,
+        "est_pump_energy_rel": 186593.77753735313,
+        "Tj_std_C": 5.455186889819721,
+        "valve_reversals": 77,
+        "n_power_events": 10,
+        "n_events_with_response": 5,
+        "response_time_median_s": 56.0,
+        "duration_s": 3577
+      },
+      "reactive_pi": {
+        "peak_Tj_C": 59.03571857043187,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.3045169619982053,
+        "est_pump_energy_rel": 38582.178249205346,
+        "Tj_std_C": 5.112704642827747,
+        "valve_reversals": 2051,
+        "n_power_events": 10,
+        "n_events_with_response": 9,
+        "response_time_median_s": 37.0,
+        "duration_s": 3577
+      },
+      "predictive_persistence": {
+        "peak_Tj_C": 57.111423032419594,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.362929829466033,
+        "est_pump_energy_rel": 59239.731332431606,
+        "Tj_std_C": 4.77013855590978,
+        "valve_reversals": 1695,
+        "n_power_events": 10,
+        "n_events_with_response": 9,
+        "response_time_median_s": 33.0,
+        "duration_s": 3577
+      },
+      "predictive_oracle": {
+        "peak_Tj_C": 58.26938380385493,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.38551859099804314,
+        "est_pump_energy_rel": 68484.7130837451,
+        "Tj_std_C": 4.864263658315462,
+        "valve_reversals": 709,
+        "n_power_events": 10,
+        "n_events_with_response": 3,
+        "response_time_median_s": 51.0,
+        "duration_s": 3577
+      }
+    },
+    "90770026313357-r6760045-n830961:0:0": {
+      "reactive_threshold": {
+        "peak_Tj_C": 58.22890837575278,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.2,
+        "est_pump_energy_rel": 7569.407999999234,
+        "Tj_std_C": 2.051084226141695,
+        "valve_reversals": 0,
+        "n_power_events": 14,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 1848
+      },
+      "reactive_pi": {
+        "peak_Tj_C": 57.95089367922127,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.2114906377085853,
+        "est_pump_energy_rel": 8516.866014281253,
+        "Tj_std_C": 1.9963202376325768,
+        "valve_reversals": 641,
+        "n_power_events": 14,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 1848
+      },
+      "predictive_persistence": {
+        "peak_Tj_C": 56.87185169738827,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.25622294372294374,
+        "est_pump_energy_rel": 12950.430087065004,
+        "Tj_std_C": 1.8510788600616503,
+        "valve_reversals": 683,
+        "n_power_events": 14,
+        "n_events_with_response": 7,
+        "response_time_median_s": 19.0,
+        "duration_s": 1848
+      },
+      "predictive_oracle": {
+        "peak_Tj_C": 57.40258288308632,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.27748917748917745,
+        "est_pump_energy_rel": 15274.087162931437,
+        "Tj_std_C": 1.8137824137788972,
+        "valve_reversals": 517,
+        "n_power_events": 14,
+        "n_events_with_response": 2,
+        "response_time_median_s": 21.5,
+        "duration_s": 1848
+      }
+    },
+    "90770026313357-r6760045-n830961:1:0": {
+      "reactive_threshold": {
+        "peak_Tj_C": 59.70101455099968,
+        "overshoot_C": 0.6010145509996789,
+        "time_above_threshold_s": 81.0,
+        "mean_cooling_demand": 0.3162987012987013,
+        "est_pump_energy_rel": 34074.160210332506,
+        "Tj_std_C": 2.9336355436636885,
+        "valve_reversals": 39,
+        "n_power_events": 14,
+        "n_events_with_response": 7,
+        "response_time_median_s": 34.0,
+        "duration_s": 1848
+      },
+      "reactive_pi": {
+        "peak_Tj_C": 58.37535662693959,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.27027269430155926,
+        "est_pump_energy_rel": 14717.208411004833,
+        "Tj_std_C": 2.167476532688257,
+        "valve_reversals": 759,
+        "n_power_events": 14,
+        "n_events_with_response": 5,
+        "response_time_median_s": 27.0,
+        "duration_s": 1848
+      },
+      "predictive_persistence": {
+        "peak_Tj_C": 56.86913248198015,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.3246212121212121,
+        "est_pump_energy_rel": 22272.71059876141,
+        "Tj_std_C": 2.0103281178514547,
+        "valve_reversals": 617,
+        "n_power_events": 14,
+        "n_events_with_response": 12,
+        "response_time_median_s": 27.0,
+        "duration_s": 1848
+      },
+      "predictive_oracle": {
+        "peak_Tj_C": 58.37855846440826,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.33630952380952384,
+        "est_pump_energy_rel": 24161.02308942123,
+        "Tj_std_C": 2.0313012407839928,
+        "valve_reversals": 624,
+        "n_power_events": 14,
+        "n_events_with_response": 6,
+        "response_time_median_s": 28.5,
+        "duration_s": 1848
+      }
+    }
+  },
+  "sensitivity": [
+    {
+      "parameter": "transport_delay_s",
+      "value": 2.0,
+      "summary": {
+        "reactive_threshold": {
+          "time_above_threshold_s": {
+            "median": 0.0,
+            "total": 878.0
+          },
+          "peak_Tj_C": {
+            "median": 57.75051647226708,
+            "total": null
+          },
+          "est_pump_energy_rel": {
+            "median": 10649.600000004351,
+            "total": 451879.57203756867
+          }
+        },
+        "reactive_pi": {
+          "time_above_threshold_s": {
+            "median": 0.0,
+            "total": 0.0,
+            "diff_vs_baseline_median": 0.0,
+            "diff_iqr": [
+              -38.0,
+              0.0
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": null
+          },
+          "peak_Tj_C": {
+            "median": 57.43915514660736,
+            "total": null,
+            "diff_vs_baseline_median": -0.31136132565971764,
+            "diff_iqr": [
+              -1.243068188091847,
+              0.0
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": 0.00390625
+          },
+          "est_pump_energy_rel": {
+            "median": 10649.600000004351,
+            "total": 284775.76854679215,
+            "diff_vs_baseline_median": 0.0,
+            "diff_iqr": [
+              0.0,
+              175.18305932647945
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": 0.42578125
+          }
+        },
+        "predictive_persistence": {
+          "time_above_threshold_s": {
+            "median": 0.0,
+            "total": 0.0,
+            "diff_vs_baseline_median": 0.0,
+            "diff_iqr": [
+              -38.0,
+              0.0
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": null
+          },
+          "peak_Tj_C": {
+            "median": 56.49087811602913,
+            "total": null,
+            "diff_vs_baseline_median": -1.38829521110911,
+            "diff_iqr": [
+              -2.5959217215566923,
+              0.0
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": 0.0009765625
+          },
+          "est_pump_energy_rel": {
+            "median": 11986.513081173525,
+            "total": 385784.39781942,
+            "diff_vs_baseline_median": 0.0,
+            "diff_iqr": [
+              0.0,
+              2035.0559352725722
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": 0.7001953125
+          }
+        },
+        "predictive_oracle": {
+          "time_above_threshold_s": {
+            "median": 0.0,
+            "total": 0.0,
+            "diff_vs_baseline_median": 0.0,
+            "diff_iqr": [
+              -38.0,
+              0.0
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": null
+          },
+          "peak_Tj_C": {
+            "median": 56.96125089171308,
+            "total": null,
+            "diff_vs_baseline_median": -0.45984410584807733,
+            "diff_iqr": [
+              -1.5448564934661704,
+              0.0
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": 0.0009765625
+          },
+          "est_pump_energy_rel": {
+            "median": 14561.14731818092,
+            "total": 438545.0501317121,
+            "diff_vs_baseline_median": 320.620011396004,
+            "diff_iqr": [
+              0.0,
+              3962.803816563621
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": 0.3203125
+          }
+        }
+      }
+    },
+    {
+      "parameter": "transport_delay_s",
+      "value": 10.0,
+      "summary": {
+        "reactive_threshold": {
+          "time_above_threshold_s": {
+            "median": 0.0,
+            "total": 1894.0
+          },
+          "peak_Tj_C": {
+            "median": 57.75051647226708,
+            "total": null
+          },
+          "est_pump_energy_rel": {
+            "median": 10649.600000004351,
+            "total": 959141.8465944426
+          }
+        },
+        "reactive_pi": {
+          "time_above_threshold_s": {
+            "median": 0.0,
+            "total": 26.0,
+            "diff_vs_baseline_median": 0.0,
+            "diff_iqr": [
+              -131.0,
+              0.0
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": null
+          },
+          "peak_Tj_C": {
+            "median": 57.48534605314179,
+            "total": null,
+            "diff_vs_baseline_median": -0.2651704191252904,
+            "diff_iqr": [
+              -0.9018474176937517,
+              0.0
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": 0.00390625
+          },
+          "est_pump_energy_rel": {
+            "median": 10649.600000004351,
+            "total": 302489.3415284539,
+            "diff_vs_baseline_median": 0.0,
+            "diff_iqr": [
+              -47464.104037209,
+              0.0
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": 0.1640625
+          }
+        },
+        "predictive_persistence": {
+          "time_above_threshold_s": {
+            "median": 0.0,
+            "total": 0.0,
+            "diff_vs_baseline_median": 0.0,
+            "diff_iqr": [
+              -131.0,
+              0.0
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": null
+          },
+          "peak_Tj_C": {
+            "median": 56.47729386953478,
+            "total": null,
+            "diff_vs_baseline_median": -1.4172553978412168,
+            "diff_iqr": [
+              -2.3226750267203045,
+              0.0
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": 0.0009765625
+          },
+          "est_pump_energy_rel": {
+            "median": 13433.251704755883,
+            "total": 418882.51124793,
+            "diff_vs_baseline_median": 0.0,
+            "diff_iqr": [
+              -40319.28368861583,
+              755.1708462998695
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": 0.3203125
+          }
+        },
+        "predictive_oracle": {
+          "time_above_threshold_s": {
+            "median": 0.0,
+            "total": 1.0,
+            "diff_vs_baseline_median": 0.0,
+            "diff_iqr": [
+              -131.0,
+              0.0
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": null
+          },
+          "peak_Tj_C": {
+            "median": 57.154505307450634,
+            "total": null,
+            "diff_vs_baseline_median": -0.5960111648164457,
+            "diff_iqr": [
+              -1.440578188316131,
+              0.0
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": 0.0009765625
+          },
+          "est_pump_energy_rel": {
+            "median": 14325.569685453118,
+            "total": 454333.0216049458,
+            "diff_vs_baseline_median": 0.0,
+            "diff_iqr": [
+              -39933.889697640836,
+              644.891915530312
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": 0.3203125
+          }
+        }
+      }
+    },
+    {
+      "parameter": "transport_delay_s",
+      "value": 20.0,
+      "summary": {
+        "reactive_threshold": {
+          "time_above_threshold_s": {
+            "median": 0.0,
+            "total": 2781.0
+          },
+          "peak_Tj_C": {
+            "median": 57.75051647226708,
+            "total": null
+          },
+          "est_pump_energy_rel": {
+            "median": 10649.600000004351,
+            "total": 1175404.2151230297
+          }
+        },
+        "reactive_pi": {
+          "time_above_threshold_s": {
+            "median": 0.0,
+            "total": 704.0,
+            "diff_vs_baseline_median": 0.0,
+            "diff_iqr": [
+              -171.0,
+              0.0
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": null
+          },
+          "peak_Tj_C": {
+            "median": 57.556945372297584,
+            "total": null,
+            "diff_vs_baseline_median": -0.19357109996949617,
+            "diff_iqr": [
+              -0.5381802431368286,
+              0.0
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": 0.00390625
+          },
+          "est_pump_energy_rel": {
+            "median": 10649.600000004351,
+            "total": 416954.80309846415,
+            "diff_vs_baseline_median": 0.0,
+            "diff_iqr": [
+              -74535.48428620091,
+              0.0
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": 0.1640625
+          }
+        },
+        "predictive_persistence": {
+          "time_above_threshold_s": {
+            "median": 0.0,
+            "total": 0.0,
+            "diff_vs_baseline_median": 0.0,
+            "diff_iqr": [
+              -177.0,
+              0.0
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": null
+          },
+          "peak_Tj_C": {
+            "median": 56.47352230338469,
+            "total": null,
+            "diff_vs_baseline_median": -1.2963111234401055,
+            "diff_iqr": [
+              -2.5569123434872765,
+              0.0
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": 0.0009765625
+          },
+          "est_pump_energy_rel": {
+            "median": 15130.300308853797,
+            "total": 480990.129683444,
+            "diff_vs_baseline_median": 0.0,
+            "diff_iqr": [
+              -69577.09231847416,
+              1148.1210716737514
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": 0.3203125
+          }
+        },
+        "predictive_oracle": {
+          "time_above_threshold_s": {
+            "median": 0.0,
+            "total": 0.0,
+            "diff_vs_baseline_median": 0.0,
+            "diff_iqr": [
+              -177.0,
+              0.0
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": null
+          },
+          "peak_Tj_C": {
+            "median": 56.51663853981397,
+            "total": null,
+            "diff_vs_baseline_median": -1.4279415624422214,
+            "diff_iqr": [
+              -2.6387761517643753,
+              0.0
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": 0.0009765625
+          },
+          "est_pump_energy_rel": {
+            "median": 14062.278748076013,
+            "total": 436542.3270919348,
+            "diff_vs_baseline_median": 0.0,
+            "diff_iqr": [
+              -72445.79783843023,
+              694.9041923021286
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": 0.3203125
+          }
+        }
+      }
+    },
+    {
+      "parameter": "tau_valve_s",
+      "value": 2.0,
+      "summary": {
+        "reactive_threshold": {
+          "time_above_threshold_s": {
+            "median": 0.0,
+            "total": 1265.0
+          },
+          "peak_Tj_C": {
+            "median": 57.75051647226708,
+            "total": null
+          },
+          "est_pump_energy_rel": {
+            "median": 10649.600000004351,
+            "total": 704858.7911400208
+          }
+        },
+        "reactive_pi": {
+          "time_above_threshold_s": {
+            "median": 0.0,
+            "total": 0.0,
+            "diff_vs_baseline_median": 0.0,
+            "diff_iqr": [
+              -71.0,
+              0.0
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": null
+          },
+          "peak_Tj_C": {
+            "median": 57.43938145745377,
+            "total": null,
+            "diff_vs_baseline_median": -0.278393662693162,
+            "diff_iqr": [
+              -1.2835153466911322,
+              0.0
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": 0.00390625
+          },
+          "est_pump_energy_rel": {
+            "median": 10649.600000004351,
+            "total": 286352.1645204007,
+            "diff_vs_baseline_median": 0.0,
+            "diff_iqr": [
+              -14510.816870544206,
+              0.0
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": 0.1640625
+          }
+        },
+        "predictive_persistence": {
+          "time_above_threshold_s": {
+            "median": 0.0,
+            "total": 0.0,
+            "diff_vs_baseline_median": 0.0,
+            "diff_iqr": [
+              -71.0,
+              0.0
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": null
+          },
+          "peak_Tj_C": {
+            "median": 56.53152152382885,
+            "total": null,
+            "diff_vs_baseline_median": -1.3484276346650859,
+            "diff_iqr": [
+              -2.642118856079321,
+              0.0
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": 0.0009765625
+          },
+          "est_pump_energy_rel": {
+            "median": 12247.081625548468,
+            "total": 395205.6869172844,
+            "diff_vs_baseline_median": 0.0,
+            "diff_iqr": [
+              -6996.650769575332,
+              716.2198946140024
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": 0.365234375
+          }
+        },
+        "predictive_oracle": {
+          "time_above_threshold_s": {
+            "median": 0.0,
+            "total": 0.0,
+            "diff_vs_baseline_median": 0.0,
+            "diff_iqr": [
+              -71.0,
+              0.0
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": null
+          },
+          "peak_Tj_C": {
+            "median": 57.03201661906392,
+            "total": null,
+            "diff_vs_baseline_median": -0.4247071815069887,
+            "diff_iqr": [
+              -1.3053154528796398,
+              0.0
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": 0.0009765625
+          },
+          "est_pump_energy_rel": {
+            "median": 14495.38827350052,
+            "total": 456950.4187931655,
+            "diff_vs_baseline_median": 0.0,
+            "diff_iqr": [
+              -4317.975244780668,
+              692.6910982430618
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": 0.51953125
+          }
+        }
+      }
+    },
+    {
+      "parameter": "tau_valve_s",
+      "value": 10.0,
+      "summary": {
+        "reactive_threshold": {
+          "time_above_threshold_s": {
+            "median": 0.0,
+            "total": 1183.0
+          },
+          "peak_Tj_C": {
+            "median": 57.75051647226708,
+            "total": null
+          },
+          "est_pump_energy_rel": {
+            "median": 10649.600000004351,
+            "total": 665893.6605351471
+          }
+        },
+        "reactive_pi": {
+          "time_above_threshold_s": {
+            "median": 0.0,
+            "total": 5.0,
+            "diff_vs_baseline_median": 0.0,
+            "diff_iqr": [
+              -91.0,
+              0.0
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": null
+          },
+          "peak_Tj_C": {
+            "median": 57.462873752017046,
+            "total": null,
+            "diff_vs_baseline_median": -0.27787702109576173,
+            "diff_iqr": [
+              -0.8898470867483823,
+              0.0
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": 0.00390625
+          },
+          "est_pump_energy_rel": {
+            "median": 10649.600000004351,
+            "total": 287356.67372476106,
+            "diff_vs_baseline_median": 0.0,
+            "diff_iqr": [
+              -22910.821440736654,
+              0.0
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": 0.1640625
+          }
+        },
+        "predictive_persistence": {
+          "time_above_threshold_s": {
+            "median": 0.0,
+            "total": 0.0,
+            "diff_vs_baseline_median": 0.0,
+            "diff_iqr": [
+              -91.0,
+              0.0
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": null
+          },
+          "peak_Tj_C": {
+            "median": 56.47670160440662,
+            "total": null,
+            "diff_vs_baseline_median": -1.3268667600133668,
+            "diff_iqr": [
+              -2.4318569112191426,
+              0.0
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": 0.0009765625
+          },
+          "est_pump_energy_rel": {
+            "median": 12421.922142747038,
+            "total": 395543.2871120443,
+            "diff_vs_baseline_median": 0.0,
+            "diff_iqr": [
+              -7249.053352913419,
+              658.6495837023185
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": 0.365234375
+          }
+        },
+        "predictive_oracle": {
+          "time_above_threshold_s": {
+            "median": 0.0,
+            "total": 0.0,
+            "diff_vs_baseline_median": 0.0,
+            "diff_iqr": [
+              -91.0,
+              0.0
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": null
+          },
+          "peak_Tj_C": {
+            "median": 57.12513771142083,
+            "total": null,
+            "diff_vs_baseline_median": -0.6244782991905637,
+            "diff_iqr": [
+              -1.577013261658358,
+              0.0
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": 0.0009765625
+          },
+          "est_pump_energy_rel": {
+            "median": 13865.536119109007,
+            "total": 433547.95413392497,
+            "diff_vs_baseline_median": 0.0,
+            "diff_iqr": [
+              -5371.616513430396,
+              582.7898605218024
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": 0.46484375
+          }
+        }
+      }
+    },
+    {
+      "parameter": "T_threshold_offset_C",
+      "value": -5.0,
+      "summary": {
+        "reactive_threshold": {
+          "time_above_threshold_s": {
+            "median": 87.0,
+            "total": 1807.0
+          },
+          "peak_Tj_C": {
+            "median": 55.804603644758316,
+            "total": null
+          },
+          "est_pump_energy_rel": {
+            "median": 104274.44669811282,
+            "total": 2238741.8720667297
+          }
+        },
+        "reactive_pi": {
+          "time_above_threshold_s": {
+            "median": 4.0,
+            "total": 214.0,
+            "diff_vs_baseline_median": -60.0,
+            "diff_iqr": [
+              -133.0,
+              0.0
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": 0.0009765625
+          },
+          "peak_Tj_C": {
+            "median": 54.57089968207346,
+            "total": null,
+            "diff_vs_baseline_median": -0.23457108113544223,
+            "diff_iqr": [
+              -1.2337039626848565,
+              0.0
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": 0.00048828125
+          },
+          "est_pump_energy_rel": {
+            "median": 31735.05135422407,
+            "total": 1868911.488808997,
+            "diff_vs_baseline_median": 0.0,
+            "diff_iqr": [
+              -66415.14229324425,
+              0.0
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": 0.09228515625
+          }
+        },
+        "predictive_persistence": {
+          "time_above_threshold_s": {
+            "median": 0.0,
+            "total": 1.0,
+            "diff_vs_baseline_median": -86.0,
+            "diff_iqr": [
+              -174.0,
+              0.0
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": 0.0009765625
+          },
+          "peak_Tj_C": {
+            "median": 52.58119378838843,
+            "total": null,
+            "diff_vs_baseline_median": -2.794121580888735,
+            "diff_iqr": [
+              -3.4235605191591816,
+              -0.20588643017887165
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": 0.0001220703125
+          },
+          "est_pump_energy_rel": {
+            "median": 45913.703143979656,
+            "total": 2635098.6402938664,
+            "diff_vs_baseline_median": 293.2015669150387,
+            "diff_iqr": [
+              -13403.527498857758,
+              41096.11896198749
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": 0.3575439453125
+          }
+        },
+        "predictive_oracle": {
+          "time_above_threshold_s": {
+            "median": 0.0,
+            "total": 6.0,
+            "diff_vs_baseline_median": -87.0,
+            "diff_iqr": [
+              -168.0,
+              0.0
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": 0.0009765625
+          },
+          "peak_Tj_C": {
+            "median": 52.57279027730855,
+            "total": null,
+            "diff_vs_baseline_median": -2.8533520202807026,
+            "diff_iqr": [
+              -3.203179637832825,
+              -0.13694893738527725
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": 0.0001220703125
+          },
+          "est_pump_energy_rel": {
+            "median": 49144.33401238355,
+            "total": 3173701.3535239566,
+            "diff_vs_baseline_median": 172.41545780555862,
+            "diff_iqr": [
+              0.0,
+              91553.90984172108
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": 0.153076171875
+          }
+        }
+      }
+    },
+    {
+      "parameter": "T_threshold_offset_C",
+      "value": 5.0,
+      "summary": {
+        "reactive_threshold": {
+          "time_above_threshold_s": {
+            "median": 0.0,
+            "total": 0.0
+          },
+          "peak_Tj_C": {
+            "median": 57.75051647226708,
+            "total": null
+          },
+          "est_pump_energy_rel": {
+            "median": 9220.096000001335,
+            "total": 186167.29600008094
+          }
+        },
+        "reactive_pi": {
+          "time_above_threshold_s": {
+            "median": 0.0,
+            "total": 0.0,
+            "diff_vs_baseline_median": 0.0,
+            "diff_iqr": [
+              0.0,
+              0.0
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": null
+          },
+          "peak_Tj_C": {
+            "median": 57.75051647226708,
+            "total": null,
+            "diff_vs_baseline_median": 0.0,
+            "diff_iqr": [
+              0.0,
+              0.0
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": null
+          },
+          "est_pump_energy_rel": {
+            "median": 9220.096000001335,
+            "total": 186167.29600008094,
+            "diff_vs_baseline_median": 0.0,
+            "diff_iqr": [
+              0.0,
+              0.0
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": null
+          }
+        },
+        "predictive_persistence": {
+          "time_above_threshold_s": {
+            "median": 0.0,
+            "total": 0.0,
+            "diff_vs_baseline_median": 0.0,
+            "diff_iqr": [
+              0.0,
+              0.0
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": null
+          },
+          "peak_Tj_C": {
+            "median": 57.75051647226708,
+            "total": null,
+            "diff_vs_baseline_median": 0.0,
+            "diff_iqr": [
+              0.0,
+              0.0
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": null
+          },
+          "est_pump_energy_rel": {
+            "median": 9220.096000001335,
+            "total": 188659.26702231233,
+            "diff_vs_baseline_median": 0.0,
+            "diff_iqr": [
+              0.0,
+              0.0
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": null
+          }
+        },
+        "predictive_oracle": {
+          "time_above_threshold_s": {
+            "median": 0.0,
+            "total": 0.0,
+            "diff_vs_baseline_median": 0.0,
+            "diff_iqr": [
+              0.0,
+              0.0
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": null
+          },
+          "peak_Tj_C": {
+            "median": 57.75051647226708,
+            "total": null,
+            "diff_vs_baseline_median": 0.0,
+            "diff_iqr": [
+              0.0,
+              0.0
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": null
+          },
+          "est_pump_energy_rel": {
+            "median": 9220.096000001335,
+            "total": 187312.04253322154,
+            "diff_vs_baseline_median": 0.0,
+            "diff_iqr": [
+              0.0,
+              0.0
+            ],
+            "n_paired": 17,
+            "wilcoxon_p": null
+          }
+        }
+      }
+    }
+  ],
+  "runtime_s": 804.4
+}

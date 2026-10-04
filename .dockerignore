@@ -1,0 +1,12 @@
+**/node_modules
+**/__pycache__
+frontend
+legacy
+docs
+training
+research/notebooks
+research/tests
+research/work
+backend/data/replay_pack*
+research_pipeline_colab.zip
+.claude

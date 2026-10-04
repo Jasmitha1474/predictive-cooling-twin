@@ -1,0 +1,97 @@
+{
+ "source": "MIT Supercloud Dataset, datacenter-challenge/202201 (public S3, CC BY-NC-ND 4.0)",
+ "note": "Object keys of the 13 small labelled jobs used for the development demo. The backend downloads these unmodified public files at startup and processes them in memory; no dataset files are shipped with the app.",
+ "files": [
+  {
+   "key": "datacenter-challenge/202201/gpu/0000/1059916241808-r9352821-n851693.csv",
+   "file_id": "1059916241808-r9352821-n851693",
+   "job_id": "1059916241808",
+   "label": "U3-128",
+   "split_in_dev_check": "train"
+  },
+  {
+   "key": "datacenter-challenge/202201/gpu/0000/13296614245176-r3741709-n685852.csv",
+   "file_id": "13296614245176-r3741709-n685852",
+   "job_id": "13296614245176",
+   "label": "U5-32",
+   "split_in_dev_check": "train"
+  },
+  {
+   "key": "datacenter-challenge/202201/gpu/0000/17776331997312-r4858666-n43543.csv",
+   "file_id": "17776331997312-r4858666-n43543",
+   "job_id": "17776331997312",
+   "label": "U3-32",
+   "split_in_dev_check": "train"
+  },
+  {
+   "key": "datacenter-challenge/202201/gpu/0000/71137865433540-r9175025-n911952.csv",
+   "file_id": "71137865433540-r9175025-n911952",
+   "job_id": "71137865433540",
+   "label": "distilbert-base-uncased",
+   "split_in_dev_check": "test"
+  },
+  {
+   "key": "datacenter-challenge/202201/gpu/0001/2645164483822-r2652301-n43543.csv",
+   "file_id": "2645164483822-r2652301-n43543",
+   "job_id": "2645164483822",
+   "label": "U5-64",
+   "split_in_dev_check": "train"
+  },
+  {
+   "key": "datacenter-challenge/202201/gpu/0001/63609340612346-r1682297-n685852.csv",
+   "file_id": "63609340612346-r1682297-n685852",
+   "job_id": "63609340612346",
+   "label": "U4-64",
+   "split_in_dev_check": "val"
+  },
+  {
+   "key": "datacenter-challenge/202201/gpu/0002/18170216283685-r9102715-n43543.csv",
+   "file_id": "18170216283685-r9102715-n43543",
+   "job_id": "18170216283685",
+   "label": "U4-32",
+   "split_in_dev_check": "val"
+  },
+  {
+   "key": "datacenter-challenge/202201/gpu/0004/23799851333110-r8937440-n685852.csv",
+   "file_id": "23799851333110-r8937440-n685852",
+   "job_id": "23799851333110",
+   "label": "U3-64",
+   "split_in_dev_check": "train"
+  },
+  {
+   "key": "datacenter-challenge/202201/gpu/0005/90770026313357-r6760045-n830961.csv",
+   "file_id": "90770026313357-r6760045-n830961",
+   "job_id": "90770026313357",
+   "label": "resnet50",
+   "split_in_dev_check": "train"
+  },
+  {
+   "key": "datacenter-challenge/202201/gpu/0008/81833680739615-r9175025-n851693.csv",
+   "file_id": "81833680739615-r9175025-n851693",
+   "job_id": "81833680739615",
+   "label": "U4-128",
+   "split_in_dev_check": "train"
+  },
+  {
+   "key": "datacenter-challenge/202201/gpu/0012/75592954051300-r7343737-n911952.csv",
+   "file_id": "75592954051300-r7343737-n911952",
+   "job_id": "75592954051300",
+   "label": "pna",
+   "split_in_dev_check": "test"
+  },
+  {
+   "key": "datacenter-challenge/202201/gpu/0012/80369538726812-r9352821-n386398.csv",
+   "file_id": "80369538726812-r9352821-n386398",
+   "job_id": "80369538726812",
+   "label": "U5-128",
+   "split_in_dev_check": "train"
+  },
+  {
+   "key": "datacenter-challenge/202201/gpu/0058/28189127894967-r3226521-n830961.csv",
+   "file_id": "28189127894967-r3226521-n830961",
+   "job_id": "28189127894967",
+   "label": "inception3",
+   "split_in_dev_check": "train"
+  }
+ ]
+}

@@ -1,0 +1,1234 @@
+{
+  "label": "DEMO ON TRAINING JOBS: DEV ML model was trained on these jobs, so ML numbers here are NOT a fair evaluation. Used only to visualise a high-load workload.",
+  "note": "Controller metrics are SIMULATED (twin driven by REAL measured power). Cooling-side twin parameters are ASSUMED; thermal inertia is fitted on real data. Not physical measurements.",
+  "traces": {
+    "n_series": 10,
+    "n_jobs": 9,
+    "total_seconds": 31096,
+    "series_ids": [
+      "1059916241808-r9352821-n851693:0:0",
+      "13296614245176-r3741709-n685852:0:0",
+      "17776331997312-r4858666-n43543:1:0",
+      "23799851333110-r8937440-n685852:0:0",
+      "2645164483822-r2652301-n43543:0:0",
+      "28189127894967-r3226521-n830961:0:0",
+      "80369538726812-r9352821-n386398:0:0",
+      "81833680739615-r9175025-n851693:0:0",
+      "90770026313357-r6760045-n830961:0:0",
+      "90770026313357-r6760045-n830961:1:0"
+    ],
+    "labels": {
+      "U3-128": 1,
+      "U3-32": 1,
+      "U3-64": 1,
+      "U4-128": 1,
+      "U5-128": 1,
+      "U5-32": 1,
+      "U5-64": 1,
+      "inception3": 1,
+      "resnet50": 2
+    },
+    "split_used": "train"
+  },
+  "calibration": {
+    "tau_s": 25,
+    "rmse_C": 3.318526926099003,
+    "T_amb_C": 36.04795602014499,
+    "R_K_per_W": 0.16711203779676237,
+    "C_total_J_per_K": 149.60023424766322,
+    "n_series": 10,
+    "n_seconds": 31096,
+    "grid": [
+      {
+        "tau_s": 5,
+        "rmse_C": 3.785954743066643,
+        "T_amb_C": 38.44846501097162,
+        "R_K_per_W": 0.15205752713578566
+      },
+      {
+        "tau_s": 10,
+        "rmse_C": 3.5345957385671087,
+        "T_amb_C": 37.45490788553501,
+        "R_K_per_W": 0.15819314887658703
+      },
+      {
+        "tau_s": 15,
+        "rmse_C": 3.398803501328422,
+        "T_amb_C": 36.81618897463838,
+        "R_K_per_W": 0.1621881770545499
+      },
+      {
+        "tau_s": 20,
+        "rmse_C": 3.334435886055652,
+        "T_amb_C": 36.3682586340547,
+        "R_K_per_W": 0.16503417792813327
+      },
+      {
+        "tau_s": 25,
+        "rmse_C": 3.318526926099003,
+        "T_amb_C": 36.04795602014499,
+        "R_K_per_W": 0.16711203779676237
+      },
+      {
+        "tau_s": 30,
+        "rmse_C": 3.3354211905070827,
+        "T_amb_C": 35.82099029350807,
+        "R_K_per_W": 0.16862843501412564
+      },
+      {
+        "tau_s": 40,
+        "rmse_C": 3.4262899293127607,
+        "T_amb_C": 35.565689060313375,
+        "R_K_per_W": 0.1704675229109001
+      },
+      {
+        "tau_s": 50,
+        "rmse_C": 3.5521213313125104,
+        "T_amb_C": 35.492975492073356,
+        "R_K_per_W": 0.17121093565708373
+      },
+      {
+        "tau_s": 60,
+        "rmse_C": 3.6868531470531574,
+        "T_amb_C": 35.543274098280726,
+        "R_K_per_W": 0.17121732304928672
+      },
+      {
+        "tau_s": 90,
+        "rmse_C": 4.057711302094402,
+        "T_amb_C": 36.1271727570046,
+        "R_K_per_W": 0.16864237730762943
+      },
+      {
+        "tau_s": 120,
+        "rmse_C": 4.348807157231667,
+        "T_amb_C": 37.03522666650233,
+        "R_K_per_W": 0.16411655629172786
+      },
+      {
+        "tau_s": 180,
+        "rmse_C": 4.762513713271043,
+        "T_amb_C": 39.11776727610831,
+        "R_K_per_W": 0.1534207607877134
+      },
+      {
+        "tau_s": 240,
+        "rmse_C": 5.05701805830761,
+        "T_amb_C": 41.16989379155794,
+        "R_K_per_W": 0.1428512525675755
+      }
+    ]
+  },
+  "calibration_split": "train",
+  "twin_params": {
+    "C_total_J_per_K": 149.60023424766322,
+    "die_fraction": 0.1,
+    "R_jc_K_per_W": 0.05,
+    "T_sat_C": 35.0,
+    "h_fg_J_per_kg": 190000.0,
+    "G0_W_per_K": 0.0,
+    "G1_W_per_K": 33.0,
+    "G_exp": 0.7,
+    "rho_kg_per_L": 1.2,
+    "x_max": 0.8,
+    "k_dry": 0.5,
+    "Q_min_Lpm": 0.5,
+    "Q_max_Lpm": 6.0,
+    "tau_valve_s": 5.0,
+    "valve_rate_max_per_s": 0.2,
+    "transport_delay_s": 5.0,
+    "k_pump": 1.0,
+    "dt_s": 0.1
+  },
+  "settings": {
+    "T_threshold_C": 59.1,
+    "hysteresis_C": 3.0,
+    "v_min": 0.2,
+    "dv_up": 0.1,
+    "dv_down": 0.02,
+    "margin_C": 2.0,
+    "kp": 0.08,
+    "ki": 0.004,
+    "candidates": 11
+  },
+  "threshold_rule": "steady-state T_j at 250 W with valve 0.5",
+  "forecasters": [
+    "persistence",
+    "oracle",
+    "ml_DEV_smoke13jobs_A1_lgbm"
+  ],
+  "summary": {
+    "reactive_threshold": {
+      "peak_Tj_C": {
+        "median": 59.210221201891905,
+        "total": null
+      },
+      "overshoot_C": {
+        "median": 0.2730200464599726,
+        "total": null
+      },
+      "time_above_threshold_s": {
+        "median": 40.0,
+        "total": 1353.0
+      },
+      "mean_cooling_demand": {
+        "median": 0.25955627705627704,
+        "total": null
+      },
+      "est_pump_energy_rel": {
+        "median": 25668.307877079547,
+        "total": 695785.3561470364
+      },
+      "Tj_std_C": {
+        "median": 4.4480863869547065,
+        "total": null
+      },
+      "valve_reversals": {
+        "median": 17.5,
+        "total": null
+      },
+      "response_time_median_s": {
+        "median": 51.0,
+        "total": null
+      },
+      "est_pump_energy_vs_baseline_ratio": 1.0
+    },
+    "reactive_pi": {
+      "peak_Tj_C": {
+        "median": 58.28349750949499,
+        "total": null,
+        "diff_vs_baseline_median": -0.8037472854085443,
+        "diff_iqr": [
+          -1.1468385847972709,
+          -0.2857487886148089
+        ],
+        "n_paired": 10,
+        "wilcoxon_p": 0.0078125
+      },
+      "overshoot_C": {
+        "median": 0.0,
+        "total": null,
+        "diff_vs_baseline_median": -0.2730200464599726,
+        "diff_iqr": [
+          -0.9563124303479835,
+          0.0
+        ],
+        "n_paired": 10,
+        "wilcoxon_p": null
+      },
+      "time_above_threshold_s": {
+        "median": 0.0,
+        "total": 2.0,
+        "diff_vs_baseline_median": -40.0,
+        "diff_iqr": [
+          -267.25,
+          0.0
+        ],
+        "n_paired": 10,
+        "wilcoxon_p": null
+      },
+      "mean_cooling_demand": {
+        "median": 0.24455934054476658,
+        "total": null,
+        "diff_vs_baseline_median": -0.023957150675754546,
+        "diff_iqr": [
+          -0.09064453406235148,
+          0.006745767024304836
+        ],
+        "n_paired": 10,
+        "wilcoxon_p": 0.109375
+      },
+      "est_pump_energy_rel": {
+        "median": 17192.48580309337,
+        "total": 228574.70467491812,
+        "diff_vs_baseline_median": -9540.111474609044,
+        "diff_iqr": [
+          -80807.0914231456,
+          591.8936434431521
+        ],
+        "n_paired": 10,
+        "wilcoxon_p": 0.109375
+      },
+      "Tj_std_C": {
+        "median": 4.135121004078819,
+        "total": null,
+        "diff_vs_baseline_median": -0.12584025424902645,
+        "diff_iqr": [
+          -0.3089779023730004,
+          -0.01686486096805556
+        ],
+        "n_paired": 10,
+        "wilcoxon_p": 0.0078125
+      },
+      "valve_reversals": {
+        "median": 1056.0,
+        "total": null,
+        "diff_vs_baseline_median": 1038.5,
+        "diff_iqr": [
+          609.5,
+          1915.5
+        ],
+        "n_paired": 10,
+        "wilcoxon_p": 0.0078125
+      },
+      "response_time_median_s": {
+        "median": 32.75,
+        "total": null,
+        "diff_vs_baseline_median": -17.0,
+        "diff_iqr": [
+          -19.0,
+          -9.5
+        ],
+        "n_paired": 5,
+        "wilcoxon_p": null
+      },
+      "est_pump_energy_vs_baseline_ratio": 0.3285132442865249
+    },
+    "predictive_persistence": {
+      "peak_Tj_C": {
+        "median": 56.94189379199414,
+        "total": null,
+        "diff_vs_baseline_median": -2.2094337031584637,
+        "diff_iqr": [
+          -2.984359632481329,
+          -1.339037868410653
+        ],
+        "n_paired": 10,
+        "wilcoxon_p": 0.0078125
+      },
+      "overshoot_C": {
+        "median": 0.0,
+        "total": null,
+        "diff_vs_baseline_median": -0.2730200464599726,
+        "diff_iqr": [
+          -0.9696537956738247,
+          0.0
+        ],
+        "n_paired": 10,
+        "wilcoxon_p": null
+      },
+      "time_above_threshold_s": {
+        "median": 0.0,
+        "total": 0.0,
+        "diff_vs_baseline_median": -40.0,
+        "diff_iqr": [
+          -268.0,
+          0.0
+        ],
+        "n_paired": 10,
+        "wilcoxon_p": null
+      },
+      "mean_cooling_demand": {
+        "median": 0.2932067932067932,
+        "total": null,
+        "diff_vs_baseline_median": 0.0016869424168694247,
+        "diff_iqr": [
+          -0.03491585473870673,
+          0.03399964062654903
+        ],
+        "n_paired": 10,
+        "wilcoxon_p": 0.9453125
+      },
+      "est_pump_energy_rel": {
+        "median": 23847.49888546232,
+        "total": 337742.734918329,
+        "diff_vs_baseline_median": -5815.058623451567,
+        "diff_iqr": [
+          -58569.41229151802,
+          3309.562011383777
+        ],
+        "n_paired": 10,
+        "wilcoxon_p": 0.109375
+      },
+      "Tj_std_C": {
+        "median": 3.842860999888769,
+        "total": null,
+        "diff_vs_baseline_median": -0.5400171352738381,
+        "diff_iqr": [
+          -0.6162844152556572,
+          -0.23012817785140494
+        ],
+        "n_paired": 10,
+        "wilcoxon_p": 0.0078125
+      },
+      "valve_reversals": {
+        "median": 993.0,
+        "total": null,
+        "diff_vs_baseline_median": 993.0,
+        "diff_iqr": [
+          607.25,
+          1680.5
+        ],
+        "n_paired": 10,
+        "wilcoxon_p": 0.0078125
+      },
+      "response_time_median_s": {
+        "median": 33.0,
+        "total": null,
+        "diff_vs_baseline_median": -18.0,
+        "diff_iqr": [
+          -19.5,
+          -13.0
+        ],
+        "n_paired": 5,
+        "wilcoxon_p": null
+      },
+      "est_pump_energy_vs_baseline_ratio": 0.48541224953138523
+    },
+    "predictive_oracle": {
+      "peak_Tj_C": {
+        "median": 57.52498054007299,
+        "total": null,
+        "diff_vs_baseline_median": -1.2516543038989774,
+        "diff_iqr": [
+          -1.848418873877982,
+          -0.8732729020656045
+        ],
+        "n_paired": 10,
+        "wilcoxon_p": 0.0078125
+      },
+      "overshoot_C": {
+        "median": 0.0,
+        "total": null,
+        "diff_vs_baseline_median": -0.2730200464599726,
+        "diff_iqr": [
+          -0.9696537956738247,
+          0.0
+        ],
+        "n_paired": 10,
+        "wilcoxon_p": null
+      },
+      "time_above_threshold_s": {
+        "median": 0.0,
+        "total": 0.0,
+        "diff_vs_baseline_median": -40.0,
+        "diff_iqr": [
+          -268.0,
+          0.0
+        ],
+        "n_paired": 10,
+        "wilcoxon_p": null
+      },
+      "mean_cooling_demand": {
+        "median": 0.309931734931735,
+        "total": null,
+        "diff_vs_baseline_median": 0.006891051635577183,
+        "diff_iqr": [
+          -0.015684233835252318,
+          0.04991090016853376
+        ],
+        "n_paired": 10,
+        "wilcoxon_p": 0.9453125
+      },
+      "est_pump_energy_rel": {
+        "median": 27834.596005827003,
+        "total": 388437.45463226706,
+        "diff_vs_baseline_median": -4765.645137657555,
+        "diff_iqr": [
+          -47140.71252221243,
+          4901.581063800517
+        ],
+        "n_paired": 10,
+        "wilcoxon_p": 0.1953125
+      },
+      "Tj_std_C": {
+        "median": 3.803463543906889,
+        "total": null,
+        "diff_vs_baseline_median": -0.5019965247453215,
+        "diff_iqr": [
+          -0.6547454500486899,
+          -0.23109438763118778
+        ],
+        "n_paired": 10,
+        "wilcoxon_p": 0.0078125
+      },
+      "valve_reversals": {
+        "median": 625.5,
+        "total": null,
+        "diff_vs_baseline_median": 553.5,
+        "diff_iqr": [
+          490.5,
+          713.75
+        ],
+        "n_paired": 10,
+        "wilcoxon_p": 0.0078125
+      },
+      "response_time_median_s": {
+        "median": 41.5,
+        "total": null,
+        "diff_vs_baseline_median": -10.5,
+        "diff_iqr": [
+          -14.0,
+          -7.75
+        ],
+        "n_paired": 4,
+        "wilcoxon_p": null
+      },
+      "est_pump_energy_vs_baseline_ratio": 0.5582719601678147
+    },
+    "predictive_ml_DEV_smoke13jobs_A1_lgbm": {
+      "peak_Tj_C": {
+        "median": 57.05398566000571,
+        "total": null,
+        "diff_vs_baseline_median": -1.8976642714953122,
+        "diff_iqr": [
+          -2.6137890784204476,
+          -1.2217460980903834
+        ],
+        "n_paired": 10,
+        "wilcoxon_p": 0.0078125
+      },
+      "overshoot_C": {
+        "median": 0.0,
+        "total": null,
+        "diff_vs_baseline_median": -0.2730200464599726,
+        "diff_iqr": [
+          -0.9696537956738247,
+          0.0
+        ],
+        "n_paired": 10,
+        "wilcoxon_p": null
+      },
+      "time_above_threshold_s": {
+        "median": 0.0,
+        "total": 0.0,
+        "diff_vs_baseline_median": -40.0,
+        "diff_iqr": [
+          -268.0,
+          0.0
+        ],
+        "n_paired": 10,
+        "wilcoxon_p": null
+      },
+      "mean_cooling_demand": {
+        "median": 0.28647186147186143,
+        "total": null,
+        "diff_vs_baseline_median": -0.0015706947823736217,
+        "diff_iqr": [
+          -0.03573487388755317,
+          0.032102225804830055
+        ],
+        "n_paired": 10,
+        "wilcoxon_p": 0.65234375
+      },
+      "est_pump_energy_rel": {
+        "median": 23426.06904526765,
+        "total": 336828.9845286275,
+        "diff_vs_baseline_median": -6778.607677054411,
+        "diff_iqr": [
+          -56979.80826276849,
+          3268.858479049211
+        ],
+        "n_paired": 10,
+        "wilcoxon_p": 0.1640625
+      },
+      "Tj_std_C": {
+        "median": 3.864601691923637,
+        "total": null,
+        "diff_vs_baseline_median": -0.4842968968669532,
+        "diff_iqr": [
+          -0.5787941768579511,
+          -0.2237034890993307
+        ],
+        "n_paired": 10,
+        "wilcoxon_p": 0.0078125
+      },
+      "valve_reversals": {
+        "median": 861.0,
+        "total": null,
+        "diff_vs_baseline_median": 817.5,
+        "diff_iqr": [
+          395.25,
+          1359.25
+        ],
+        "n_paired": 10,
+        "wilcoxon_p": 0.00390625
+      },
+      "response_time_median_s": {
+        "median": 32.5,
+        "total": null,
+        "diff_vs_baseline_median": -18.0,
+        "diff_iqr": [
+          -19.0,
+          -17.5
+        ],
+        "n_paired": 5,
+        "wilcoxon_p": null
+      },
+      "est_pump_energy_vs_baseline_ratio": 0.4840989847700205
+    }
+  },
+  "per_trace": {
+    "1059916241808-r9352821-n851693:0:0": {
+      "reactive_threshold": {
+        "peak_Tj_C": 60.20810337516057,
+        "overshoot_C": 1.1081033751605673,
+        "time_above_threshold_s": 429.0,
+        "mean_cooling_demand": 0.4601561483409236,
+        "est_pump_energy_rel": 220304.38860501247,
+        "Tj_std_C": 4.545645745381971,
+        "valve_reversals": 109,
+        "n_power_events": 10,
+        "n_events_with_response": 10,
+        "response_time_median_s": 41.5,
+        "duration_s": 4611
+      },
+      "reactive_pi": {
+        "peak_Tj_C": 58.89461902901362,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.30381409466794357,
+        "est_pump_energy_rel": 48434.189950549,
+        "Tj_std_C": 4.241803678186012,
+        "valve_reversals": 2913,
+        "n_power_events": 10,
+        "n_events_with_response": 9,
+        "response_time_median_s": 32.0,
+        "duration_s": 4611
+      },
+      "predictive_persistence": {
+        "peak_Tj_C": 56.977804891864054,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.35727607894166125,
+        "est_pump_energy_rel": 71542.02013823407,
+        "Tj_std_C": 3.9625384146954716,
+        "valve_reversals": 2681,
+        "n_power_events": 10,
+        "n_events_with_response": 10,
+        "response_time_median_s": 28.5,
+        "duration_s": 4611
+      },
+      "predictive_oracle": {
+        "peak_Tj_C": 58.02958716359015,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.38032964649750595,
+        "est_pump_energy_rel": 83006.40664502299,
+        "Tj_std_C": 3.921268116335898,
+        "valve_reversals": 619,
+        "n_power_events": 10,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 4611
+      },
+      "predictive_ml_DEV_smoke13jobs_A1_lgbm": {
+        "peak_Tj_C": 57.09876432964248,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.3574278898286706,
+        "est_pump_energy_rel": 71263.17429785349,
+        "Tj_std_C": 3.9669413983341877,
+        "valve_reversals": 2335,
+        "n_power_events": 10,
+        "n_events_with_response": 4,
+        "response_time_median_s": 24.0,
+        "duration_s": 4611
+      }
+    },
+    "13296614245176-r3741709-n685852:0:0": {
+      "reactive_threshold": {
+        "peak_Tj_C": 52.77758782024082,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.19999999999999998,
+        "est_pump_energy_rel": 17416.192000014045,
+        "Tj_std_C": 2.8451794736330553,
+        "valve_reversals": 0,
+        "n_power_events": 30,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 4252
+      },
+      "reactive_pi": {
+        "peak_Tj_C": 52.77758782024082,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.19999999999999998,
+        "est_pump_energy_rel": 17416.192000014045,
+        "Tj_std_C": 2.8451794736330553,
+        "valve_reversals": 0,
+        "n_power_events": 30,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 4252
+      },
+      "predictive_persistence": {
+        "peak_Tj_C": 52.77758782024082,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.19999999999999998,
+        "est_pump_energy_rel": 17416.192000014045,
+        "Tj_std_C": 2.8451794736330553,
+        "valve_reversals": 0,
+        "n_power_events": 30,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 4252
+      },
+      "predictive_oracle": {
+        "peak_Tj_C": 52.77758782024082,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.19999999999999998,
+        "est_pump_energy_rel": 17416.192000014045,
+        "Tj_std_C": 2.8451794736330553,
+        "valve_reversals": 0,
+        "n_power_events": 30,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 4252
+      },
+      "predictive_ml_DEV_smoke13jobs_A1_lgbm": {
+        "peak_Tj_C": 52.77758782024082,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.20016462841015992,
+        "est_pump_energy_rel": 17446.08878103218,
+        "Tj_std_C": 2.846057326096094,
+        "valve_reversals": 13,
+        "n_power_events": 30,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 4252
+      }
+    },
+    "17776331997312-r4858666-n43543:1:0": {
+      "reactive_threshold": {
+        "peak_Tj_C": 51.864999921082266,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.19999999999999998,
+        "est_pump_energy_rel": 5521.407999999459,
+        "Tj_std_C": 4.864902363681516,
+        "valve_reversals": 0,
+        "n_power_events": 3,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 1348
+      },
+      "reactive_pi": {
+        "peak_Tj_C": 51.864999921082266,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.19999999999999998,
+        "est_pump_energy_rel": 5521.407999999459,
+        "Tj_std_C": 4.864902363681516,
+        "valve_reversals": 0,
+        "n_power_events": 3,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 1348
+      },
+      "predictive_persistence": {
+        "peak_Tj_C": 51.864999921082266,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.19999999999999998,
+        "est_pump_energy_rel": 5521.407999999459,
+        "Tj_std_C": 4.864902363681516,
+        "valve_reversals": 0,
+        "n_power_events": 3,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 1348
+      },
+      "predictive_oracle": {
+        "peak_Tj_C": 51.864999921082266,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.19999999999999998,
+        "est_pump_energy_rel": 5521.407999999459,
+        "Tj_std_C": 4.864902363681516,
+        "valve_reversals": 0,
+        "n_power_events": 3,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 1348
+      },
+      "predictive_ml_DEV_smoke13jobs_A1_lgbm": {
+        "peak_Tj_C": 51.864999921082266,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.19999999999999998,
+        "est_pump_energy_rel": 5521.407999999459,
+        "Tj_std_C": 4.864902363681516,
+        "valve_reversals": 0,
+        "n_power_events": 3,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 1348
+      }
+    },
+    "23799851333110-r8937440-n685852:0:0": {
+      "reactive_threshold": {
+        "peak_Tj_C": 59.64604009291995,
+        "overshoot_C": 0.5460400929199452,
+        "time_above_threshold_s": 181.0,
+        "mean_cooling_demand": 0.32571505812381724,
+        "est_pump_energy_rel": 65650.57096670933,
+        "Tj_std_C": 4.350527028527443,
+        "valve_reversals": 87,
+        "n_power_events": 5,
+        "n_events_with_response": 5,
+        "response_time_median_s": 51.0,
+        "duration_s": 3699
+      },
+      "reactive_pi": {
+        "peak_Tj_C": 58.696696132136424,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.27182875767761117,
+        "est_pump_energy_rel": 29802.895440346885,
+        "Tj_std_C": 4.028438329971625,
+        "valve_reversals": 2427,
+        "n_power_events": 5,
+        "n_events_with_response": 3,
+        "response_time_median_s": 32.0,
+        "duration_s": 3699
+      },
+      "predictive_persistence": {
+        "peak_Tj_C": 57.141106001313034,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.3290889429575561,
+        "est_pump_energy_rel": 46906.562258010366,
+        "Tj_std_C": 3.7231835850820665,
+        "valve_reversals": 1927,
+        "n_power_events": 5,
+        "n_events_with_response": 4,
+        "response_time_median_s": 33.0,
+        "duration_s": 3699
+      },
+      "predictive_oracle": {
+        "peak_Tj_C": 57.09002152467318,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.3394971613949716,
+        "est_pump_energy_rel": 50134.70318577651,
+        "Tj_std_C": 3.685658971477881,
+        "valve_reversals": 2051,
+        "n_power_events": 5,
+        "n_events_with_response": 1,
+        "response_time_median_s": 42.0,
+        "duration_s": 3699
+      },
+      "predictive_ml_DEV_smoke13jobs_A1_lgbm": {
+        "peak_Tj_C": 57.00920699036893,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.32257366855907,
+        "est_pump_energy_rel": 44806.43555487653,
+        "Tj_std_C": 3.762261985513086,
+        "valve_reversals": 961,
+        "n_power_events": 5,
+        "n_events_with_response": 4,
+        "response_time_median_s": 33.0,
+        "duration_s": 3699
+      }
+    },
+    "2645164483822-r2652301-n43543:0:0": {
+      "reactive_threshold": {
+        "peak_Tj_C": 58.210657084409796,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.20000000000000004,
+        "est_pump_energy_rel": 8048.639999999181,
+        "Tj_std_C": 6.396777801883258,
+        "valve_reversals": 0,
+        "n_power_events": 10,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 1965
+      },
+      "reactive_pi": {
+        "peak_Tj_C": 57.68768858489276,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.2089943560324065,
+        "est_pump_energy_rel": 8837.83152459005,
+        "Tj_std_C": 6.267475133680131,
+        "valve_reversals": 593,
+        "n_power_events": 10,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 1965
+      },
+      "predictive_persistence": {
+        "peak_Tj_C": 56.788277059155725,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.2434605597964377,
+        "est_pump_energy_rel": 12461.389348510884,
+        "Tj_std_C": 5.845275918406576,
+        "valve_reversals": 727,
+        "n_power_events": 10,
+        "n_events_with_response": 3,
+        "response_time_median_s": 50.0,
+        "duration_s": 1965
+      },
+      "predictive_oracle": {
+        "peak_Tj_C": 56.91923216630233,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.2605089058524173,
+        "est_pump_energy_rel": 14584.08141839987,
+        "Tj_std_C": 5.670546298235375,
+        "valve_reversals": 495,
+        "n_power_events": 10,
+        "n_events_with_response": 1,
+        "response_time_median_s": 48.0,
+        "duration_s": 1965
+      },
+      "predictive_ml_DEV_smoke13jobs_A1_lgbm": {
+        "peak_Tj_C": 56.63647022391252,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.24274809160305347,
+        "est_pump_energy_rel": 12397.152378392084,
+        "Tj_std_C": 5.85675117655009,
+        "valve_reversals": 729,
+        "n_power_events": 10,
+        "n_events_with_response": 3,
+        "response_time_median_s": 50.0,
+        "duration_s": 1965
+      }
+    },
+    "28189127894967-r3226521-n830961:0:0": {
+      "reactive_threshold": {
+        "peak_Tj_C": 58.77440231086386,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.20000000000000004,
+        "est_pump_energy_rel": 14057.472000011543,
+        "Tj_std_C": 3.777843551542456,
+        "valve_reversals": 0,
+        "n_power_events": 29,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 3432
+      },
+      "reactive_pi": {
+        "peak_Tj_C": 58.1162517008303,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.21792042832848815,
+        "est_pump_energy_rel": 16968.779606172695,
+        "Tj_std_C": 3.6554657112475297,
+        "valve_reversals": 1343,
+        "n_power_events": 29,
+        "n_events_with_response": 6,
+        "response_time_median_s": 33.5,
+        "duration_s": 3432
+      },
+      "predictive_persistence": {
+        "peak_Tj_C": 56.86046899615385,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.2616841491841492,
+        "est_pump_energy_rel": 25404.691263682722,
+        "Tj_std_C": 3.447395100976554,
+        "valve_reversals": 1259,
+        "n_power_events": 29,
+        "n_events_with_response": 16,
+        "response_time_median_s": 37.0,
+        "duration_s": 3432
+      },
+      "predictive_oracle": {
+        "peak_Tj_C": 57.562518621173375,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.28263403263403264,
+        "est_pump_energy_rel": 31280.058532824067,
+        "Tj_std_C": 3.541527872038391,
+        "valve_reversals": 737,
+        "n_power_events": 29,
+        "n_events_with_response": 10,
+        "response_time_median_s": 41.5,
+        "duration_s": 3432
+      },
+      "predictive_ml_DEV_smoke13jobs_A1_lgbm": {
+        "peak_Tj_C": 57.62327269154183,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.25614801864801867,
+        "est_pump_energy_rel": 26488.929690499077,
+        "Tj_std_C": 3.4974406230179724,
+        "valve_reversals": 1279,
+        "n_power_events": 29,
+        "n_events_with_response": 19,
+        "response_time_median_s": 44.0,
+        "duration_s": 3432
+      }
+    },
+    "80369538726812-r9352821-n386398:0:0": {
+      "reactive_threshold": {
+        "peak_Tj_C": 60.28090362199915,
+        "overshoot_C": 1.1809036219991498,
+        "time_above_threshold_s": 297.0,
+        "mean_cooling_demand": 0.3802347209920282,
+        "est_pump_energy_rel": 135262.59187741912,
+        "Tj_std_C": 6.8530525848652255,
+        "valve_reversals": 99,
+        "n_power_events": 11,
+        "n_events_with_response": 10,
+        "response_time_median_s": 56.0,
+        "duration_s": 4516
+      },
+      "reactive_pi": {
+        "peak_Tj_C": 59.190588733939705,
+        "overshoot_C": 0.09058873393970401,
+        "time_above_threshold_s": 1.0,
+        "mean_cooling_demand": 0.2773374423909616,
+        "est_pump_energy_rel": 39469.028488679156,
+        "Tj_std_C": 6.84855556581009,
+        "valve_reversals": 1803,
+        "n_power_events": 11,
+        "n_events_with_response": 11,
+        "response_time_median_s": 39.0,
+        "duration_s": 4516
+      },
+      "predictive_persistence": {
+        "peak_Tj_C": 57.212422474023064,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.3336802480070859,
+        "est_pump_energy_rel": 63418.04505829476,
+        "Tj_std_C": 6.324520197794231,
+        "valve_reversals": 1803,
+        "n_power_events": 11,
+        "n_events_with_response": 10,
+        "response_time_median_s": 36.5,
+        "duration_s": 4516
+      },
+      "predictive_oracle": {
+        "peak_Tj_C": 58.57795026439167,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.3593224092116918,
+        "est_pump_energy_rel": 77580.26444144682,
+        "Tj_std_C": 6.411260637114957,
+        "valve_reversals": 1595,
+        "n_power_events": 11,
+        "n_events_with_response": 9,
+        "response_time_median_s": 36.0,
+        "duration_s": 4516
+      },
+      "predictive_ml_DEV_smoke13jobs_A1_lgbm": {
+        "peak_Tj_C": 58.059761939505805,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.33500885739592556,
+        "est_pump_energy_rel": 66237.5593310054,
+        "Tj_std_C": 6.424485416464487,
+        "valve_reversals": 1485,
+        "n_power_events": 11,
+        "n_events_with_response": 11,
+        "response_time_median_s": 31.0,
+        "duration_s": 4516
+      }
+    },
+    "81833680739615-r9175025-n851693:0:0": {
+      "reactive_threshold": {
+        "peak_Tj_C": 60.29868011671498,
+        "overshoot_C": 1.198680116714982,
+        "time_above_threshold_s": 366.0,
+        "mean_cooling_demand": 0.4786916410399775,
+        "est_pump_energy_rel": 188034.26094372687,
+        "Tj_std_C": 5.455742795471185,
+        "valve_reversals": 79,
+        "n_power_events": 10,
+        "n_events_with_response": 9,
+        "response_time_median_s": 55.0,
+        "duration_s": 3577
+      },
+      "reactive_pi": {
+        "peak_Tj_C": 59.13300029967177,
+        "overshoot_C": 0.03300029967176954,
+        "time_above_threshold_s": 1.0,
+        "mean_cooling_demand": 0.3049732369402256,
+        "est_pump_energy_rel": 38707.91456030922,
+        "Tj_std_C": 5.1450529480391705,
+        "valve_reversals": 2065,
+        "n_power_events": 10,
+        "n_events_with_response": 9,
+        "response_time_median_s": 35.0,
+        "duration_s": 3577
+      },
+      "predictive_persistence": {
+        "peak_Tj_C": 57.100336364179185,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.3641319541515236,
+        "est_pump_energy_rel": 59760.1802089495,
+        "Tj_std_C": 4.7967064415421365,
+        "valve_reversals": 1689,
+        "n_power_events": 10,
+        "n_events_with_response": 9,
+        "response_time_median_s": 33.0,
+        "duration_s": 3577
+      },
+      "predictive_oracle": {
+        "peak_Tj_C": 58.4017727374135,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.38697232317584573,
+        "est_pump_energy_rel": 69092.31001935255,
+        "Tj_std_C": 4.8935416937308105,
+        "valve_reversals": 723,
+        "n_power_events": 10,
+        "n_events_with_response": 3,
+        "response_time_median_s": 51.0,
+        "duration_s": 3577
+      },
+      "predictive_ml_DEV_smoke13jobs_A1_lgbm": {
+        "peak_Tj_C": 57.32325446622306,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.362594352809617,
+        "est_pump_energy_rel": 58829.95519161588,
+        "Tj_std_C": 4.876918675343178,
+        "valve_reversals": 1481,
+        "n_power_events": 10,
+        "n_events_with_response": 9,
+        "response_time_median_s": 36.0,
+        "duration_s": 3577
+      }
+    },
+    "90770026313357-r6760045-n830961:0:0": {
+      "reactive_threshold": {
+        "peak_Tj_C": 58.272734762234585,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.2,
+        "est_pump_energy_rel": 7569.407999999234,
+        "Tj_std_C": 2.0530017008964987,
+        "valve_reversals": 0,
+        "n_power_events": 14,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 1848
+      },
+      "reactive_pi": {
+        "peak_Tj_C": 58.066059210587184,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.2121764821705686,
+        "est_pump_energy_rel": 8576.264299330654,
+        "Tj_std_C": 1.999033314189684,
+        "valve_reversals": 659,
+        "n_power_events": 14,
+        "n_events_with_response": 0,
+        "response_time_median_s": null,
+        "duration_s": 1848
+      },
+      "predictive_persistence": {
+        "peak_Tj_C": 56.96147761277174,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.2568722943722944,
+        "est_pump_energy_rel": 13021.940135391273,
+        "Tj_std_C": 1.8563136139499261,
+        "valve_reversals": 683,
+        "n_power_events": 14,
+        "n_events_with_response": 7,
+        "response_time_median_s": 19.0,
+        "duration_s": 1848
+      },
+      "predictive_oracle": {
+        "peak_Tj_C": 57.48744245897261,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.27878787878787875,
+        "est_pump_energy_rel": 15432.896910600823,
+        "Tj_std_C": 1.8236477438896033,
+        "valve_reversals": 489,
+        "n_power_events": 14,
+        "n_events_with_response": 2,
+        "response_time_median_s": 22.0,
+        "duration_s": 1848
+      },
+      "predictive_ml_DEV_smoke13jobs_A1_lgbm": {
+        "peak_Tj_C": 56.839139227839155,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.2610930735930736,
+        "est_pump_energy_rel": 13475.072903317187,
+        "Tj_std_C": 1.8481980249388856,
+        "valve_reversals": 761,
+        "n_power_events": 14,
+        "n_events_with_response": 6,
+        "response_time_median_s": 27.0,
+        "duration_s": 1848
+      }
+    },
+    "90770026313357-r6760045-n830961:1:0": {
+      "reactive_threshold": {
+        "peak_Tj_C": 59.6543050572136,
+        "overshoot_C": 0.5543050572135968,
+        "time_above_threshold_s": 80.0,
+        "mean_cooling_demand": 0.31911255411255407,
+        "est_pump_energy_rel": 33920.42375414505,
+        "Tj_std_C": 2.9622835593415826,
+        "valve_reversals": 35,
+        "n_power_events": 14,
+        "n_events_with_response": 11,
+        "response_time_median_s": 36.0,
+        "duration_s": 1848
+      },
+      "reactive_pi": {
+        "peak_Tj_C": 58.450743318159695,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.271198252761045,
+        "est_pump_energy_rel": 14840.20080492696,
+        "Tj_std_C": 2.173129570909957,
+        "valve_reversals": 769,
+        "n_power_events": 14,
+        "n_events_with_response": 6,
+        "response_time_median_s": 26.5,
+        "duration_s": 1848
+      },
+      "predictive_persistence": {
+        "peak_Tj_C": 56.92230997121654,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.32472943722943726,
+        "est_pump_energy_rel": 22290.306507241916,
+        "Tj_std_C": 2.016129061273366,
+        "valve_reversals": 617,
+        "n_power_events": 14,
+        "n_events_with_response": 12,
+        "response_time_median_s": 27.0,
+        "duration_s": 1848
+      },
+      "predictive_oracle": {
+        "peak_Tj_C": 58.51709035873711,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.33722943722943727,
+        "est_pump_energy_rel": 24389.13347882994,
+        "Tj_std_C": 2.0351378385325254,
+        "valve_reversals": 632,
+        "n_power_events": 14,
+        "n_events_with_response": 5,
+        "response_time_median_s": 24.0,
+        "duration_s": 1848
+      },
+      "predictive_ml_DEV_smoke13jobs_A1_lgbm": {
+        "peak_Tj_C": 57.109648051184855,
+        "overshoot_C": 0.0,
+        "time_above_threshold_s": 0.0,
+        "mean_cooling_demand": 0.3118506493506493,
+        "est_pump_energy_rel": 20363.208400036227,
+        "Tj_std_C": 2.051734222167858,
+        "valve_reversals": 319,
+        "n_power_events": 14,
+        "n_events_with_response": 10,
+        "response_time_median_s": 32.0,
+        "duration_s": 1848
+      }
+    }
+  },
+  "runtime_s": 94.9
+}

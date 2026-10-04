@@ -1,0 +1,85 @@
+{
+ "run_type": "SUBSET_104_JOBS",
+ "subset_note": "Real MIT Supercloud data, random subset of 104 labelled jobs (4 per label, single-file jobs of 2-40 MB), chronological job split 73/16/15. LSTMs: 2 seeds, max 10 epochs (full design: 5 seeds, 20 epochs). Not the full 3,430-job experiment.",
+ "test": {
+  "jobs": 15,
+  "t_first_utc": "2021-08-13 12:46:16.608000040",
+  "t_last_utc": "2021-09-28 05:03:48.325000048",
+  "jobs_by_label": {
+   "schnet": 3,
+   "pna": 2,
+   "conv": 2,
+   "resnet50": 2,
+   "resnet152": 2,
+   "dimenet": 1,
+   "resnet101": 1,
+   "vgg19": 1,
+   "vgg11": 1
+  }
+ },
+ "train": {
+  "jobs": 73,
+  "t_first_utc": "2021-05-06 22:22:55.693000078",
+  "t_last_utc": "2021-06-29 17:16:13.740000010",
+  "jobs_by_label": {
+   "U5-32": 4,
+   "resnet50_v1.5": 4,
+   "U5-64": 4,
+   "U5-128": 4,
+   "U4-32": 4,
+   "U3-64": 4,
+   "U4-64": 4,
+   "U3-32": 4,
+   "U3-128": 4,
+   "inception4": 4,
+   "U4-128": 4,
+   "resnet152_v2": 4,
+   "resnet101_v2": 4,
+   "vgg11": 3,
+   "vgg16": 3,
+   "resnet101": 3,
+   "inception3": 3,
+   "vgg19": 3,
+   "resnet50": 2,
+   "resnet152": 2,
+   "distilbert-base-uncased": 2
+  }
+ },
+ "val": {
+  "jobs": 16,
+  "t_first_utc": "2021-06-29 22:49:10.523999929",
+  "t_last_utc": "2021-08-13 23:55:52.532999992",
+  "jobs_by_label": {
+   "bert-base-uncased": 4,
+   "dimenet": 3,
+   "distilbert-base-uncased": 2,
+   "pna": 2,
+   "conv": 2,
+   "vgg16": 1,
+   "inception3": 1,
+   "schnet": 1
+  }
+ },
+ "labels_missing_from_test": [
+  "U3-128",
+  "U3-32",
+  "U3-64",
+  "U4-128",
+  "U4-32",
+  "U4-64",
+  "U5-128",
+  "U5-32",
+  "U5-64",
+  "bert-base-uncased",
+  "distilbert-base-uncased",
+  "inception3",
+  "inception4",
+  "resnet101_v2",
+  "resnet152_v2",
+  "resnet50_v1.5",
+  "vgg16"
+ ],
+ "train_jobs_overlapping_test_period": 0,
+ "note": "Split is by job start time. Long training jobs can still be running when the first test job starts; the count above reports how many. Windows never cross jobs.",
+ "train_last_end_utc": "2021-06-29 17:16:13.740000010"
+}

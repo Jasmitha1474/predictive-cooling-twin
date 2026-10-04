@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+orjson
+websockets
+numpy
+pandas
+scikit-learn
+lightgbm
+joblib
+pydantic
+pyarrow
+scipy
+# optional: only when serving an exported LSTM (PCOOL_MODEL=lstm:...)
+# torch

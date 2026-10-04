@@ -1,0 +1,2598 @@
+{
+ "run_type": "SUBSET_104_JOBS",
+ "subset_note": "Real MIT Supercloud data, random subset of 104 labelled jobs (4 per label, single-file jobs of 2-40 MB), chronological job split 73/16/15. LSTMs: 2 seeds, max 10 epochs (full design: 5 seeds, 20 epochs). Not the full 3,430-job experiment.",
+ "e2_note": "Simulated control response on the first 60 min of each of the 30 test-split GPU traces.",
+ "label": "SUBSET RUN: 104 real MIT Supercloud labelled jobs (4 per label); test split = 15 jobs (30 GPU series, first 60 min of each); ML forecaster = L0 LSTM selected by validation MAE",
+ "note": "Controller metrics are SIMULATED (twin driven by REAL measured power). Cooling-side twin parameters are ASSUMED; thermal inertia is fitted on real data. Not physical measurements.",
+ "traces": {
+  "n_series": 30,
+  "n_jobs": 15,
+  "total_seconds": 101976,
+  "series_ids": [
+   "13911439659364-r8333645-n851693:0:0",
+   "13911439659364-r8333645-n851693:1:0",
+   "17063430544464-r9555635-n136082:0:0",
+   "17063430544464-r9555635-n136082:1:0",
+   "1837213663243-r1682297-n43543:0:0",
+   "1837213663243-r1682297-n43543:1:0",
+   "21201596330943-r2652301-n911952:0:0",
+   "21201596330943-r2652301-n911952:1:0",
+   "2358206523531-r3226521-n851693:0:0",
+   "2358206523531-r3226521-n851693:1:0",
+   "26300382265433-r8579942-n136082:0:0",
+   "26300382265433-r8579942-n136082:1:0",
+   "39092500943499-r1682297-n43543:0:0",
+   "39092500943499-r1682297-n43543:1:0",
+   "39511809026013-r3226521-n976057:0:0",
+   "39511809026013-r3226521-n976057:1:0",
+   "49829012996913-r7217787-n830961:0:0",
+   "49829012996913-r7217787-n830961:1:0",
+   "51742883005021-r1485405-n851693:0:0",
+   "51742883005021-r1485405-n851693:1:0",
+   "66128261934918-r4179716-n386398:0:0",
+   "66128261934918-r4179716-n386398:1:0",
+   "67194505864097-r9720335-n911952:0:0",
+   "67194505864097-r9720335-n911952:1:0",
+   "68382429293939-r4179716-n911952:0:0",
+   "68382429293939-r4179716-n911952:1:0",
+   "84670086588198-r8939293-n139058:0:0",
+   "84670086588198-r8939293-n139058:1:0",
+   "88197594960846-r4179716-n911952:0:0",
+   "88197594960846-r4179716-n911952:1:0"
+  ],
+  "labels": {
+   "conv": 4,
+   "dimenet": 2,
+   "pna": 4,
+   "resnet101": 2,
+   "resnet152": 4,
+   "resnet50": 4,
+   "schnet": 6,
+   "vgg11": 2,
+   "vgg19": 2
+  },
+  "split_used": "test",
+  "max_seconds_per_trace": 3600
+ },
+ "calibration": {
+  "tau_s": 20,
+  "rmse_C": 4.560421442451658,
+  "T_amb_C": 43.70552339905623,
+  "R_K_per_W": 0.11808789032968102,
+  "C_total_J_per_K": 169.36537645107768,
+  "n_series": 116,
+  "n_seconds": 2039277,
+  "grid": [
+   {
+    "tau_s": 5,
+    "rmse_C": 4.578584749882658,
+    "T_amb_C": 44.038534291587446,
+    "R_K_per_W": 0.11620443180757455
+   },
+   {
+    "tau_s": 10,
+    "rmse_C": 4.564841002974063,
+    "T_amb_C": 43.79318399529693,
+    "R_K_per_W": 0.11756236731946015
+   },
+   {
+    "tau_s": 15,
+    "rmse_C": 4.5610921721190545,
+    "T_amb_C": 43.7217345279672,
+    "R_K_per_W": 0.11797524089515629
+   },
+   {
+    "tau_s": 20,
+    "rmse_C": 4.560421442451658,
+    "T_amb_C": 43.70552339905623,
+    "R_K_per_W": 0.11808789032968102
+   },
+   {
+    "tau_s": 25,
+    "rmse_C": 4.561276334200806,
+    "T_amb_C": 43.714173818206575,
+    "R_K_per_W": 0.11806521187853496
+   },
+   {
+    "tau_s": 30,
+    "rmse_C": 4.563085400474261,
+    "T_amb_C": 43.73623700647538,
+    "R_K_per_W": 0.11796937571567169
+   },
+   {
+    "tau_s": 40,
+    "rmse_C": 4.568541079490231,
+    "T_amb_C": 43.802084966674805,
+    "R_K_per_W": 0.11765893376544058
+   },
+   {
+    "tau_s": 50,
+    "rmse_C": 4.575536329749801,
+    "T_amb_C": 43.883453135424745,
+    "R_K_per_W": 0.1172633411570363
+   },
+   {
+    "tau_s": 60,
+    "rmse_C": 4.583429465797699,
+    "T_amb_C": 43.9725139929394,
+    "R_K_per_W": 0.11682520345068571
+   },
+   {
+    "tau_s": 90,
+    "rmse_C": 4.609387459851029,
+    "T_amb_C": 44.25074830286698,
+    "R_K_per_W": 0.11544587315908082
+   },
+   {
+    "tau_s": 120,
+    "rmse_C": 4.636145526547826,
+    "T_amb_C": 44.513679575671205,
+    "R_K_per_W": 0.11414175082801206
+   },
+   {
+    "tau_s": 180,
+    "rmse_C": 4.688923987535601,
+    "T_amb_C": 44.95388476799629,
+    "R_K_per_W": 0.11197743916866387
+   },
+   {
+    "tau_s": 240,
+    "rmse_C": 4.74050566189207,
+    "T_amb_C": 45.2926468565684,
+    "R_K_per_W": 0.11034329179335121
+   }
+  ]
+ },
+ "calibration_split": "train",
+ "twin_params": {
+  "C_total_J_per_K": 169.36537645107768,
+  "die_fraction": 0.1,
+  "R_jc_K_per_W": 0.05,
+  "T_sat_C": 35.0,
+  "h_fg_J_per_kg": 190000.0,
+  "G0_W_per_K": 0.0,
+  "G1_W_per_K": 33.0,
+  "G_exp": 0.7,
+  "rho_kg_per_L": 1.2,
+  "x_max": 0.8,
+  "k_dry": 0.5,
+  "Q_min_Lpm": 0.5,
+  "Q_max_Lpm": 6.0,
+  "tau_valve_s": 5.0,
+  "valve_rate_max_per_s": 0.2,
+  "transport_delay_s": 5.0,
+  "k_pump": 1.0,
+  "dt_s": 0.1
+ },
+ "settings": {
+  "T_threshold_C": 59.1,
+  "hysteresis_C": 3.0,
+  "v_min": 0.2,
+  "dv_up": 0.1,
+  "dv_down": 0.02,
+  "margin_C": 2.0,
+  "kp": 0.08,
+  "ki": 0.004,
+  "candidates": 11
+ },
+ "threshold_rule": "steady-state T_j at 250 W with valve 0.5",
+ "forecasters": [
+  "persistence",
+  "oracle",
+  "ml_L0_lstm"
+ ],
+ "summary": {
+  "reactive_threshold": {
+   "peak_Tj_C": {
+    "median": 49.21170249985734,
+    "total": null
+   },
+   "overshoot_C": {
+    "median": 0.0,
+    "total": null
+   },
+   "time_above_threshold_s": {
+    "median": 0.0,
+    "total": 993.0
+   },
+   "mean_cooling_demand": {
+    "median": 0.2,
+    "total": null
+   },
+   "est_pump_energy_rel": {
+    "median": 14745.600000012995,
+    "total": 769213.4281216447
+   },
+   "Tj_std_C": {
+    "median": 2.5934360012793958,
+    "total": null
+   },
+   "valve_reversals": {
+    "median": 0.0,
+    "total": null
+   },
+   "response_time_median_s": {
+    "median": 47.0,
+    "total": null
+   },
+   "est_pump_energy_vs_baseline_ratio": 1.0
+  },
+  "reactive_pi": {
+   "peak_Tj_C": {
+    "median": 49.21170249985734,
+    "total": null,
+    "diff_vs_baseline_median": 0.0,
+    "diff_iqr": [
+     -0.25915018821769387,
+     0.0
+    ],
+    "n_paired": 30,
+    "wilcoxon_p": 0.0078125
+   },
+   "overshoot_C": {
+    "median": 0.0,
+    "total": null,
+    "diff_vs_baseline_median": 0.0,
+    "diff_iqr": [
+     0.0,
+     0.0
+    ],
+    "n_paired": 30,
+    "wilcoxon_p": null
+   },
+   "time_above_threshold_s": {
+    "median": 0.0,
+    "total": 15.0,
+    "diff_vs_baseline_median": 0.0,
+    "diff_iqr": [
+     0.0,
+     0.0
+    ],
+    "n_paired": 30,
+    "wilcoxon_p": null
+   },
+   "mean_cooling_demand": {
+    "median": 0.2,
+    "total": null,
+    "diff_vs_baseline_median": 0.0,
+    "diff_iqr": [
+     0.0,
+     0.0
+    ],
+    "n_paired": 30,
+    "wilcoxon_p": 0.7421875
+   },
+   "est_pump_energy_rel": {
+    "median": 14745.600000012995,
+    "total": 513828.9483039063,
+    "diff_vs_baseline_median": 0.0,
+    "diff_iqr": [
+     0.0,
+     0.0
+    ],
+    "n_paired": 30,
+    "wilcoxon_p": 1.0
+   },
+   "Tj_std_C": {
+    "median": 2.4872173260184773,
+    "total": null,
+    "diff_vs_baseline_median": 0.0,
+    "diff_iqr": [
+     -0.022738015814679713,
+     0.0
+    ],
+    "n_paired": 30,
+    "wilcoxon_p": 0.0078125
+   },
+   "valve_reversals": {
+    "median": 0.0,
+    "total": null,
+    "diff_vs_baseline_median": 0.0,
+    "diff_iqr": [
+     0.0,
+     776.25
+    ],
+    "n_paired": 30,
+    "wilcoxon_p": 0.0078125
+   },
+   "response_time_median_s": {
+    "median": 23.0,
+    "total": null,
+    "diff_vs_baseline_median": -19.5,
+    "diff_iqr": [
+     -26.0,
+     -7.25
+    ],
+    "n_paired": 4,
+    "wilcoxon_p": null
+   },
+   "est_pump_energy_vs_baseline_ratio": 0.6679926916494866
+  },
+  "predictive_persistence": {
+   "peak_Tj_C": {
+    "median": 49.21170249985734,
+    "total": null,
+    "diff_vs_baseline_median": 0.0,
+    "diff_iqr": [
+     -1.5428854353868537,
+     0.0
+    ],
+    "n_paired": 30,
+    "wilcoxon_p": 0.0078125
+   },
+   "overshoot_C": {
+    "median": 0.0,
+    "total": null,
+    "diff_vs_baseline_median": 0.0,
+    "diff_iqr": [
+     0.0,
+     0.0
+    ],
+    "n_paired": 30,
+    "wilcoxon_p": null
+   },
+   "time_above_threshold_s": {
+    "median": 0.0,
+    "total": 0.0,
+    "diff_vs_baseline_median": 0.0,
+    "diff_iqr": [
+     0.0,
+     0.0
+    ],
+    "n_paired": 30,
+    "wilcoxon_p": null
+   },
+   "mean_cooling_demand": {
+    "median": 0.2,
+    "total": null,
+    "diff_vs_baseline_median": 0.0,
+    "diff_iqr": [
+     0.0,
+     0.0
+    ],
+    "n_paired": 30,
+    "wilcoxon_p": 0.0546875
+   },
+   "est_pump_energy_rel": {
+    "median": 14745.600000012995,
+    "total": 712631.5886674816,
+    "diff_vs_baseline_median": 0.0,
+    "diff_iqr": [
+     0.0,
+     0.0
+    ],
+    "n_paired": 30,
+    "wilcoxon_p": 0.7421875
+   },
+   "Tj_std_C": {
+    "median": 2.303418279123946,
+    "total": null,
+    "diff_vs_baseline_median": 0.0,
+    "diff_iqr": [
+     -0.1801870012820701,
+     0.0
+    ],
+    "n_paired": 30,
+    "wilcoxon_p": 0.0078125
+   },
+   "valve_reversals": {
+    "median": 0.0,
+    "total": null,
+    "diff_vs_baseline_median": 0.0,
+    "diff_iqr": [
+     0.0,
+     418.5
+    ],
+    "n_paired": 30,
+    "wilcoxon_p": 0.0078125
+   },
+   "response_time_median_s": {
+    "median": 21.5,
+    "total": null,
+    "diff_vs_baseline_median": -6.25,
+    "diff_iqr": [
+     -14.625,
+     2.25
+    ],
+    "n_paired": 4,
+    "wilcoxon_p": null
+   },
+   "est_pump_energy_vs_baseline_ratio": 0.9264419504579746
+  },
+  "predictive_oracle": {
+   "peak_Tj_C": {
+    "median": 49.21170249985734,
+    "total": null,
+    "diff_vs_baseline_median": 0.0,
+    "diff_iqr": [
+     -1.5034671602452807,
+     0.0
+    ],
+    "n_paired": 30,
+    "wilcoxon_p": 0.0078125
+   },
+   "overshoot_C": {
+    "median": 0.0,
+    "total": null,
+    "diff_vs_baseline_median": 0.0,
+    "diff_iqr": [
+     0.0,
+     0.0
+    ],
+    "n_paired": 30,
+    "wilcoxon_p": null
+   },
+   "time_above_threshold_s": {
+    "median": 0.0,
+    "total": 0.0,
+    "diff_vs_baseline_median": 0.0,
+    "diff_iqr": [
+     0.0,
+     0.0
+    ],
+    "n_paired": 30,
+    "wilcoxon_p": null
+   },
+   "mean_cooling_demand": {
+    "median": 0.2,
+    "total": null,
+    "diff_vs_baseline_median": 0.0,
+    "diff_iqr": [
+     0.0,
+     0.0
+    ],
+    "n_paired": 30,
+    "wilcoxon_p": 0.0390625
+   },
+   "est_pump_energy_rel": {
+    "median": 14745.600000012995,
+    "total": 728936.3841766122,
+    "diff_vs_baseline_median": 0.0,
+    "diff_iqr": [
+     0.0,
+     0.0
+    ],
+    "n_paired": 30,
+    "wilcoxon_p": 0.7421875
+   },
+   "Tj_std_C": {
+    "median": 2.2795700584614904,
+    "total": null,
+    "diff_vs_baseline_median": 0.0,
+    "diff_iqr": [
+     -0.16472028180694975,
+     0.0
+    ],
+    "n_paired": 30,
+    "wilcoxon_p": 0.0078125
+   },
+   "valve_reversals": {
+    "median": 0.0,
+    "total": null,
+    "diff_vs_baseline_median": 0.0,
+    "diff_iqr": [
+     0.0,
+     146.25
+    ],
+    "n_paired": 30,
+    "wilcoxon_p": 0.0078125
+   },
+   "response_time_median_s": {
+    "median": 32.0,
+    "total": null,
+    "diff_vs_baseline_median": -14.25,
+    "diff_iqr": [
+     -22.875,
+     1.375
+    ],
+    "n_paired": 4,
+    "wilcoxon_p": null
+   },
+   "est_pump_energy_vs_baseline_ratio": 0.9476386624666894
+  },
+  "predictive_ml_L0_lstm": {
+   "peak_Tj_C": {
+    "median": 49.21170249985734,
+    "total": null,
+    "diff_vs_baseline_median": 0.0,
+    "diff_iqr": [
+     -0.6172418947444882,
+     0.0
+    ],
+    "n_paired": 30,
+    "wilcoxon_p": 0.0078125
+   },
+   "overshoot_C": {
+    "median": 0.0,
+    "total": null,
+    "diff_vs_baseline_median": 0.0,
+    "diff_iqr": [
+     0.0,
+     0.0
+    ],
+    "n_paired": 30,
+    "wilcoxon_p": null
+   },
+   "time_above_threshold_s": {
+    "median": 0.0,
+    "total": 0.0,
+    "diff_vs_baseline_median": 0.0,
+    "diff_iqr": [
+     0.0,
+     0.0
+    ],
+    "n_paired": 30,
+    "wilcoxon_p": null
+   },
+   "mean_cooling_demand": {
+    "median": 0.2,
+    "total": null,
+    "diff_vs_baseline_median": 0.0,
+    "diff_iqr": [
+     0.0,
+     0.0
+    ],
+    "n_paired": 30,
+    "wilcoxon_p": 0.078125
+   },
+   "est_pump_energy_rel": {
+    "median": 14745.600000012995,
+    "total": 689403.2418575247,
+    "diff_vs_baseline_median": 0.0,
+    "diff_iqr": [
+     0.0,
+     0.0
+    ],
+    "n_paired": 30,
+    "wilcoxon_p": 0.7421875
+   },
+   "Tj_std_C": {
+    "median": 2.2785426749862308,
+    "total": null,
+    "diff_vs_baseline_median": 0.0,
+    "diff_iqr": [
+     -0.14603515618864515,
+     0.0
+    ],
+    "n_paired": 30,
+    "wilcoxon_p": 0.0078125
+   },
+   "valve_reversals": {
+    "median": 0.0,
+    "total": null,
+    "diff_vs_baseline_median": 0.0,
+    "diff_iqr": [
+     0.0,
+     15.0
+    ],
+    "n_paired": 30,
+    "wilcoxon_p": 0.0078125
+   },
+   "response_time_median_s": {
+    "median": 39.0,
+    "total": null,
+    "diff_vs_baseline_median": -4.75,
+    "diff_iqr": [
+     -15.5,
+     8.875
+    ],
+    "n_paired": 4,
+    "wilcoxon_p": null
+   },
+   "est_pump_energy_vs_baseline_ratio": 0.8962444188487325
+  }
+ },
+ "per_trace": {
+  "13911439659364-r8333645-n851693:0:0": {
+   "reactive_threshold": {
+    "peak_Tj_C": 53.352808451740614,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 6.545252242431236,
+    "valve_reversals": 0,
+    "n_power_events": 3,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "reactive_pi": {
+    "peak_Tj_C": 53.352808451740614,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 6.545252242431236,
+    "valve_reversals": 0,
+    "n_power_events": 3,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_persistence": {
+    "peak_Tj_C": 53.352808451740614,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 6.545252242431236,
+    "valve_reversals": 0,
+    "n_power_events": 3,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_oracle": {
+    "peak_Tj_C": 53.352808451740614,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 6.545252242431236,
+    "valve_reversals": 0,
+    "n_power_events": 3,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_ml_L0_lstm": {
+    "peak_Tj_C": 53.352808451740614,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 6.545252242431236,
+    "valve_reversals": 0,
+    "n_power_events": 3,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   }
+  },
+  "13911439659364-r8333645-n851693:1:0": {
+   "reactive_threshold": {
+    "peak_Tj_C": 53.53332005917318,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 6.652852577309071,
+    "valve_reversals": 0,
+    "n_power_events": 2,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "reactive_pi": {
+    "peak_Tj_C": 53.53332005917318,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 6.652852577309071,
+    "valve_reversals": 0,
+    "n_power_events": 2,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_persistence": {
+    "peak_Tj_C": 53.53332005917318,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 6.652852577309071,
+    "valve_reversals": 0,
+    "n_power_events": 2,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_oracle": {
+    "peak_Tj_C": 53.53332005917318,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 6.652852577309071,
+    "valve_reversals": 0,
+    "n_power_events": 2,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_ml_L0_lstm": {
+    "peak_Tj_C": 53.53332005917318,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 6.652852577309071,
+    "valve_reversals": 0,
+    "n_power_events": 2,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   }
+  },
+  "17063430544464-r9555635-n136082:0:0": {
+   "reactive_threshold": {
+    "peak_Tj_C": 46.94556315929045,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 1.024319165772317,
+    "valve_reversals": 0,
+    "n_power_events": 0,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "reactive_pi": {
+    "peak_Tj_C": 46.94556315929045,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 1.024319165772317,
+    "valve_reversals": 0,
+    "n_power_events": 0,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_persistence": {
+    "peak_Tj_C": 46.94556315929045,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 1.024319165772317,
+    "valve_reversals": 0,
+    "n_power_events": 0,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_oracle": {
+    "peak_Tj_C": 46.94556315929045,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 1.024319165772317,
+    "valve_reversals": 0,
+    "n_power_events": 0,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_ml_L0_lstm": {
+    "peak_Tj_C": 46.94556315929045,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 1.024319165772317,
+    "valve_reversals": 0,
+    "n_power_events": 0,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   }
+  },
+  "17063430544464-r9555635-n136082:1:0": {
+   "reactive_threshold": {
+    "peak_Tj_C": 46.64654844873361,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 1.0128553936335711,
+    "valve_reversals": 0,
+    "n_power_events": 0,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "reactive_pi": {
+    "peak_Tj_C": 46.64654844873361,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 1.0128553936335711,
+    "valve_reversals": 0,
+    "n_power_events": 0,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_persistence": {
+    "peak_Tj_C": 46.64654844873361,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 1.0128553936335711,
+    "valve_reversals": 0,
+    "n_power_events": 0,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_oracle": {
+    "peak_Tj_C": 46.64654844873361,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 1.0128553936335711,
+    "valve_reversals": 0,
+    "n_power_events": 0,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_ml_L0_lstm": {
+    "peak_Tj_C": 46.64654844873361,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 1.0128553936335711,
+    "valve_reversals": 0,
+    "n_power_events": 0,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   }
+  },
+  "1837213663243-r1682297-n43543:0:0": {
+   "reactive_threshold": {
+    "peak_Tj_C": 42.36892226819595,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 0.7991083258186595,
+    "valve_reversals": 0,
+    "n_power_events": 0,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "reactive_pi": {
+    "peak_Tj_C": 42.36892226819595,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 0.7991083258186595,
+    "valve_reversals": 0,
+    "n_power_events": 0,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_persistence": {
+    "peak_Tj_C": 42.36892226819595,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 0.7991083258186595,
+    "valve_reversals": 0,
+    "n_power_events": 0,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_oracle": {
+    "peak_Tj_C": 42.36892226819595,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 0.7991083258186595,
+    "valve_reversals": 0,
+    "n_power_events": 0,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_ml_L0_lstm": {
+    "peak_Tj_C": 42.36892226819595,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 0.7991083258186595,
+    "valve_reversals": 0,
+    "n_power_events": 0,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   }
+  },
+  "1837213663243-r1682297-n43543:1:0": {
+   "reactive_threshold": {
+    "peak_Tj_C": 42.06155220312236,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 0.7914411214214636,
+    "valve_reversals": 0,
+    "n_power_events": 0,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "reactive_pi": {
+    "peak_Tj_C": 42.06155220312236,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 0.7914411214214636,
+    "valve_reversals": 0,
+    "n_power_events": 0,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_persistence": {
+    "peak_Tj_C": 42.06155220312236,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 0.7914411214214636,
+    "valve_reversals": 0,
+    "n_power_events": 0,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_oracle": {
+    "peak_Tj_C": 42.06155220312236,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 0.7914411214214636,
+    "valve_reversals": 0,
+    "n_power_events": 0,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_ml_L0_lstm": {
+    "peak_Tj_C": 42.06155220312236,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 0.7914411214214636,
+    "valve_reversals": 0,
+    "n_power_events": 0,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   }
+  },
+  "21201596330943-r2652301-n911952:0:0": {
+   "reactive_threshold": {
+    "peak_Tj_C": 49.28344081959363,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.19999999999999998,
+    "est_pump_energy_rel": 9793.536000002545,
+    "Tj_std_C": 1.5996823139596008,
+    "valve_reversals": 0,
+    "n_power_events": 16,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 2391
+   },
+   "reactive_pi": {
+    "peak_Tj_C": 49.28344081959363,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.19999999999999998,
+    "est_pump_energy_rel": 9793.536000002545,
+    "Tj_std_C": 1.5996823139596008,
+    "valve_reversals": 0,
+    "n_power_events": 16,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 2391
+   },
+   "predictive_persistence": {
+    "peak_Tj_C": 49.28344081959363,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.19999999999999998,
+    "est_pump_energy_rel": 9793.536000002545,
+    "Tj_std_C": 1.5996823139596008,
+    "valve_reversals": 0,
+    "n_power_events": 16,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 2391
+   },
+   "predictive_oracle": {
+    "peak_Tj_C": 49.28344081959363,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.19999999999999998,
+    "est_pump_energy_rel": 9793.536000002545,
+    "Tj_std_C": 1.5996823139596008,
+    "valve_reversals": 0,
+    "n_power_events": 16,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 2391
+   },
+   "predictive_ml_L0_lstm": {
+    "peak_Tj_C": 49.28344081959363,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.19999999999999998,
+    "est_pump_energy_rel": 9793.536000002545,
+    "Tj_std_C": 1.5996823139596008,
+    "valve_reversals": 0,
+    "n_power_events": 16,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 2391
+   }
+  },
+  "21201596330943-r2652301-n911952:1:0": {
+   "reactive_threshold": {
+    "peak_Tj_C": 48.66389826165241,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.19999999999999998,
+    "est_pump_energy_rel": 9793.536000002545,
+    "Tj_std_C": 1.5160373310005792,
+    "valve_reversals": 0,
+    "n_power_events": 11,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 2391
+   },
+   "reactive_pi": {
+    "peak_Tj_C": 48.66389826165241,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.19999999999999998,
+    "est_pump_energy_rel": 9793.536000002545,
+    "Tj_std_C": 1.5160373310005792,
+    "valve_reversals": 0,
+    "n_power_events": 11,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 2391
+   },
+   "predictive_persistence": {
+    "peak_Tj_C": 48.66389826165241,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.19999999999999998,
+    "est_pump_energy_rel": 9793.536000002545,
+    "Tj_std_C": 1.5160373310005792,
+    "valve_reversals": 0,
+    "n_power_events": 11,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 2391
+   },
+   "predictive_oracle": {
+    "peak_Tj_C": 48.66389826165241,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.19999999999999998,
+    "est_pump_energy_rel": 9793.536000002545,
+    "Tj_std_C": 1.5160373310005792,
+    "valve_reversals": 0,
+    "n_power_events": 11,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 2391
+   },
+   "predictive_ml_L0_lstm": {
+    "peak_Tj_C": 48.66389826165241,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.19999999999999998,
+    "est_pump_energy_rel": 9793.536000002545,
+    "Tj_std_C": 1.5160373310005792,
+    "valve_reversals": 0,
+    "n_power_events": 11,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 2391
+   }
+  },
+  "2358206523531-r3226521-n851693:0:0": {
+   "reactive_threshold": {
+    "peak_Tj_C": 50.064149065093154,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 3.5291396858813378,
+    "valve_reversals": 0,
+    "n_power_events": 2,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "reactive_pi": {
+    "peak_Tj_C": 50.064149065093154,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 3.5291396858813378,
+    "valve_reversals": 0,
+    "n_power_events": 2,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_persistence": {
+    "peak_Tj_C": 50.064149065093154,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 3.5291396858813378,
+    "valve_reversals": 0,
+    "n_power_events": 2,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_oracle": {
+    "peak_Tj_C": 50.064149065093154,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 3.5291396858813378,
+    "valve_reversals": 0,
+    "n_power_events": 2,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_ml_L0_lstm": {
+    "peak_Tj_C": 50.064149065093154,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 3.5291396858813378,
+    "valve_reversals": 0,
+    "n_power_events": 2,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   }
+  },
+  "2358206523531-r3226521-n851693:1:0": {
+   "reactive_threshold": {
+    "peak_Tj_C": 50.68270665018278,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 3.5795597671608834,
+    "valve_reversals": 0,
+    "n_power_events": 2,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "reactive_pi": {
+    "peak_Tj_C": 50.68270665018278,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 3.5795597671608834,
+    "valve_reversals": 0,
+    "n_power_events": 2,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_persistence": {
+    "peak_Tj_C": 50.68270665018278,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 3.5795597671608834,
+    "valve_reversals": 0,
+    "n_power_events": 2,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_oracle": {
+    "peak_Tj_C": 50.68270665018278,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 3.5795597671608834,
+    "valve_reversals": 0,
+    "n_power_events": 2,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_ml_L0_lstm": {
+    "peak_Tj_C": 50.68270665018278,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 3.5795597671608834,
+    "valve_reversals": 0,
+    "n_power_events": 2,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   }
+  },
+  "26300382265433-r8579942-n136082:0:0": {
+   "reactive_threshold": {
+    "peak_Tj_C": 48.6672208588302,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 3.5795998163693326,
+    "valve_reversals": 0,
+    "n_power_events": 2,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "reactive_pi": {
+    "peak_Tj_C": 48.6672208588302,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 3.5795998163693326,
+    "valve_reversals": 0,
+    "n_power_events": 2,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_persistence": {
+    "peak_Tj_C": 48.6672208588302,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 3.5795998163693326,
+    "valve_reversals": 0,
+    "n_power_events": 2,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_oracle": {
+    "peak_Tj_C": 48.6672208588302,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 3.5795998163693326,
+    "valve_reversals": 0,
+    "n_power_events": 2,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_ml_L0_lstm": {
+    "peak_Tj_C": 48.6672208588302,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 3.5795998163693326,
+    "valve_reversals": 0,
+    "n_power_events": 2,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   }
+  },
+  "26300382265433-r8579942-n136082:1:0": {
+   "reactive_threshold": {
+    "peak_Tj_C": 48.821884498194606,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 3.654960196032759,
+    "valve_reversals": 0,
+    "n_power_events": 2,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "reactive_pi": {
+    "peak_Tj_C": 48.821884498194606,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 3.654960196032759,
+    "valve_reversals": 0,
+    "n_power_events": 2,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_persistence": {
+    "peak_Tj_C": 48.821884498194606,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 3.654960196032759,
+    "valve_reversals": 0,
+    "n_power_events": 2,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_oracle": {
+    "peak_Tj_C": 48.821884498194606,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 3.654960196032759,
+    "valve_reversals": 0,
+    "n_power_events": 2,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_ml_L0_lstm": {
+    "peak_Tj_C": 48.821884498194606,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 3.654960196032759,
+    "valve_reversals": 0,
+    "n_power_events": 2,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   }
+  },
+  "39092500943499-r1682297-n43543:0:0": {
+   "reactive_threshold": {
+    "peak_Tj_C": 48.81771182534064,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 2.024473538758862,
+    "valve_reversals": 0,
+    "n_power_events": 1,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "reactive_pi": {
+    "peak_Tj_C": 48.81771182534064,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 2.024473538758862,
+    "valve_reversals": 0,
+    "n_power_events": 1,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_persistence": {
+    "peak_Tj_C": 48.81771182534064,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 2.024473538758862,
+    "valve_reversals": 0,
+    "n_power_events": 1,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_oracle": {
+    "peak_Tj_C": 48.81771182534064,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 2.024473538758862,
+    "valve_reversals": 0,
+    "n_power_events": 1,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_ml_L0_lstm": {
+    "peak_Tj_C": 48.81771182534064,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 2.024473538758862,
+    "valve_reversals": 0,
+    "n_power_events": 1,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   }
+  },
+  "39092500943499-r1682297-n43543:1:0": {
+   "reactive_threshold": {
+    "peak_Tj_C": 48.207483901292775,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 1.9649143739491943,
+    "valve_reversals": 0,
+    "n_power_events": 1,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "reactive_pi": {
+    "peak_Tj_C": 48.207483901292775,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 1.9649143739491943,
+    "valve_reversals": 0,
+    "n_power_events": 1,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_persistence": {
+    "peak_Tj_C": 48.207483901292775,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 1.9649143739491943,
+    "valve_reversals": 0,
+    "n_power_events": 1,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_oracle": {
+    "peak_Tj_C": 48.207483901292775,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 1.9649143739491943,
+    "valve_reversals": 0,
+    "n_power_events": 1,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_ml_L0_lstm": {
+    "peak_Tj_C": 48.207483901292775,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 1.9649143739491943,
+    "valve_reversals": 0,
+    "n_power_events": 1,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   }
+  },
+  "39511809026013-r3226521-n976057:0:0": {
+   "reactive_threshold": {
+    "peak_Tj_C": 44.159636076236666,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.19999999999999998,
+    "est_pump_energy_rel": 10973.184000005034,
+    "Tj_std_C": 0.9039338902118461,
+    "valve_reversals": 0,
+    "n_power_events": 0,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 2679
+   },
+   "reactive_pi": {
+    "peak_Tj_C": 44.159636076236666,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.19999999999999998,
+    "est_pump_energy_rel": 10973.184000005034,
+    "Tj_std_C": 0.9039338902118461,
+    "valve_reversals": 0,
+    "n_power_events": 0,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 2679
+   },
+   "predictive_persistence": {
+    "peak_Tj_C": 44.159636076236666,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.19999999999999998,
+    "est_pump_energy_rel": 10973.184000005034,
+    "Tj_std_C": 0.9039338902118461,
+    "valve_reversals": 0,
+    "n_power_events": 0,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 2679
+   },
+   "predictive_oracle": {
+    "peak_Tj_C": 44.159636076236666,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.19999999999999998,
+    "est_pump_energy_rel": 10973.184000005034,
+    "Tj_std_C": 0.9039338902118461,
+    "valve_reversals": 0,
+    "n_power_events": 0,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 2679
+   },
+   "predictive_ml_L0_lstm": {
+    "peak_Tj_C": 44.159636076236666,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.19999999999999998,
+    "est_pump_energy_rel": 10973.184000005034,
+    "Tj_std_C": 0.9039338902118461,
+    "valve_reversals": 0,
+    "n_power_events": 0,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 2679
+   }
+  },
+  "39511809026013-r3226521-n976057:1:0": {
+   "reactive_threshold": {
+    "peak_Tj_C": 44.53989502860033,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.19999999999999998,
+    "est_pump_energy_rel": 10973.184000005034,
+    "Tj_std_C": 0.9218776439722051,
+    "valve_reversals": 0,
+    "n_power_events": 0,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 2679
+   },
+   "reactive_pi": {
+    "peak_Tj_C": 44.53989502860033,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.19999999999999998,
+    "est_pump_energy_rel": 10973.184000005034,
+    "Tj_std_C": 0.9218776439722051,
+    "valve_reversals": 0,
+    "n_power_events": 0,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 2679
+   },
+   "predictive_persistence": {
+    "peak_Tj_C": 44.53989502860033,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.19999999999999998,
+    "est_pump_energy_rel": 10973.184000005034,
+    "Tj_std_C": 0.9218776439722051,
+    "valve_reversals": 0,
+    "n_power_events": 0,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 2679
+   },
+   "predictive_oracle": {
+    "peak_Tj_C": 44.53989502860033,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.19999999999999998,
+    "est_pump_energy_rel": 10973.184000005034,
+    "Tj_std_C": 0.9218776439722051,
+    "valve_reversals": 0,
+    "n_power_events": 0,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 2679
+   },
+   "predictive_ml_L0_lstm": {
+    "peak_Tj_C": 44.53989502860033,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.19999999999999998,
+    "est_pump_energy_rel": 10973.184000005034,
+    "Tj_std_C": 0.9218776439722051,
+    "valve_reversals": 0,
+    "n_power_events": 0,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 2679
+   }
+  },
+  "49829012996913-r7217787-n830961:0:0": {
+   "reactive_threshold": {
+    "peak_Tj_C": 51.819690851479756,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 1.1790746397239196,
+    "valve_reversals": 0,
+    "n_power_events": 2,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "reactive_pi": {
+    "peak_Tj_C": 51.819690851479756,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 1.1790746397239196,
+    "valve_reversals": 0,
+    "n_power_events": 2,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_persistence": {
+    "peak_Tj_C": 51.819690851479756,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 1.1790746397239196,
+    "valve_reversals": 0,
+    "n_power_events": 2,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_oracle": {
+    "peak_Tj_C": 51.819690851479756,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 1.1790746397239196,
+    "valve_reversals": 0,
+    "n_power_events": 2,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_ml_L0_lstm": {
+    "peak_Tj_C": 51.819690851479756,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 1.1790746397239196,
+    "valve_reversals": 0,
+    "n_power_events": 2,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   }
+  },
+  "49829012996913-r7217787-n830961:1:0": {
+   "reactive_threshold": {
+    "peak_Tj_C": 51.88438867449095,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 1.1628063726997333,
+    "valve_reversals": 0,
+    "n_power_events": 2,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "reactive_pi": {
+    "peak_Tj_C": 51.88438867449095,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 1.1628063726997333,
+    "valve_reversals": 0,
+    "n_power_events": 2,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_persistence": {
+    "peak_Tj_C": 51.88438867449095,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 1.1628063726997333,
+    "valve_reversals": 0,
+    "n_power_events": 2,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_oracle": {
+    "peak_Tj_C": 51.88438867449095,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 1.1628063726997333,
+    "valve_reversals": 0,
+    "n_power_events": 2,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_ml_L0_lstm": {
+    "peak_Tj_C": 51.88438867449095,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 1.1628063726997333,
+    "valve_reversals": 0,
+    "n_power_events": 2,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   }
+  },
+  "51742883005021-r1485405-n851693:0:0": {
+   "reactive_threshold": {
+    "peak_Tj_C": 58.695301115593026,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 3.2235947867860952,
+    "valve_reversals": 0,
+    "n_power_events": 57,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "reactive_pi": {
+    "peak_Tj_C": 58.34976753130277,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.21192172419032862,
+    "est_pump_energy_rel": 16668.012890818536,
+    "Tj_std_C": 3.1932774323665223,
+    "valve_reversals": 1039,
+    "n_power_events": 57,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_persistence": {
+    "peak_Tj_C": 55.781438067815,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.34569444444444447,
+    "est_pump_energy_rel": 51687.32087053676,
+    "Tj_std_C": 2.983345451743335,
+    "valve_reversals": 1233,
+    "n_power_events": 57,
+    "n_events_with_response": 53,
+    "response_time_median_s": 23.0,
+    "duration_s": 3600
+   },
+   "predictive_oracle": {
+    "peak_Tj_C": 56.28149554699159,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.3361111111111112,
+    "est_pump_energy_rel": 47869.82741544575,
+    "Tj_std_C": 3.003967744376829,
+    "valve_reversals": 1797,
+    "n_power_events": 57,
+    "n_events_with_response": 39,
+    "response_time_median_s": 30.0,
+    "duration_s": 3600
+   },
+   "predictive_ml_L0_lstm": {
+    "peak_Tj_C": 56.51743040789874,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.3119166666666667,
+    "est_pump_energy_rel": 40587.84769177085,
+    "Tj_std_C": 3.028881245201235,
+    "valve_reversals": 1843,
+    "n_power_events": 57,
+    "n_events_with_response": 54,
+    "response_time_median_s": 28.5,
+    "duration_s": 3600
+   }
+  },
+  "51742883005021-r1485405-n851693:1:0": {
+   "reactive_threshold": {
+    "peak_Tj_C": 58.76011295844279,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 3.235890490879594,
+    "valve_reversals": 0,
+    "n_power_events": 57,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "reactive_pi": {
+    "peak_Tj_C": 58.315974003806254,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.21171285907169457,
+    "est_pump_energy_rel": 16632.40302413934,
+    "Tj_std_C": 3.2039554245655886,
+    "valve_reversals": 1035,
+    "n_power_events": 57,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_persistence": {
+    "peak_Tj_C": 55.648599007176955,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.34722222222222227,
+    "est_pump_energy_rel": 52173.6342404605,
+    "Tj_std_C": 2.989983452373947,
+    "valve_reversals": 1273,
+    "n_power_events": 57,
+    "n_events_with_response": 55,
+    "response_time_median_s": 18.0,
+    "duration_s": 3600
+   },
+   "predictive_oracle": {
+    "peak_Tj_C": 56.75549007811575,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.3389166666666667,
+    "est_pump_energy_rel": 48750.09737622514,
+    "Tj_std_C": 3.0124343788390897,
+    "valve_reversals": 1817,
+    "n_power_events": 57,
+    "n_events_with_response": 38,
+    "response_time_median_s": 27.5,
+    "duration_s": 3600
+   },
+   "predictive_ml_L0_lstm": {
+    "peak_Tj_C": 56.424314036021336,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.3116666666666667,
+    "est_pump_energy_rel": 40483.34040949476,
+    "Tj_std_C": 3.037316416164113,
+    "valve_reversals": 1875,
+    "n_power_events": 57,
+    "n_events_with_response": 54,
+    "response_time_median_s": 23.0,
+    "duration_s": 3600
+   }
+  },
+  "66128261934918-r4179716-n386398:0:0": {
+   "reactive_threshold": {
+    "peak_Tj_C": 58.58108238054812,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 2.5958797749688998,
+    "valve_reversals": 0,
+    "n_power_events": 26,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "reactive_pi": {
+    "peak_Tj_C": 57.92903408075665,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2265603714747523,
+    "est_pump_energy_rel": 19283.332390102587,
+    "Tj_std_C": 2.4881187654956816,
+    "valve_reversals": 1770,
+    "n_power_events": 26,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_persistence": {
+    "peak_Tj_C": 56.34813882544534,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2836388888888889,
+    "est_pump_energy_rel": 31604.336787323657,
+    "Tj_std_C": 2.3064512702773965,
+    "valve_reversals": 558,
+    "n_power_events": 26,
+    "n_events_with_response": 5,
+    "response_time_median_s": 11.0,
+    "duration_s": 3600
+   },
+   "predictive_oracle": {
+    "peak_Tj_C": 56.125135704487775,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.29291666666666666,
+    "est_pump_energy_rel": 33907.45203555465,
+    "Tj_std_C": 2.2818832670524607,
+    "valve_reversals": 362,
+    "n_power_events": 26,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_ml_L0_lstm": {
+    "peak_Tj_C": 57.75809318755547,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.29324999999999996,
+    "est_pump_energy_rel": 35113.50008863948,
+    "Tj_std_C": 2.2949608389706864,
+    "valve_reversals": 266,
+    "n_power_events": 26,
+    "n_events_with_response": 4,
+    "response_time_median_s": 43.5,
+    "duration_s": 3600
+   }
+  },
+  "66128261934918-r4179716-n386398:1:0": {
+   "reactive_threshold": {
+    "peak_Tj_C": 58.500705314273134,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 2.5909922275898922,
+    "valve_reversals": 0,
+    "n_power_events": 34,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "reactive_pi": {
+    "peak_Tj_C": 58.000167396693925,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.22587218342364748,
+    "est_pump_energy_rel": 19148.332653050653,
+    "Tj_std_C": 2.4863158865412727,
+    "valve_reversals": 1706,
+    "n_power_events": 34,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_persistence": {
+    "peak_Tj_C": 56.44352473375733,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.28333333333333327,
+    "est_pump_energy_rel": 31520.596554961336,
+    "Tj_std_C": 2.300385287970495,
+    "valve_reversals": 592,
+    "n_power_events": 34,
+    "n_events_with_response": 2,
+    "response_time_median_s": 20.5,
+    "duration_s": 3600
+   },
+   "predictive_oracle": {
+    "peak_Tj_C": 56.08712014937178,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.29272222222222216,
+    "est_pump_energy_rel": 33862.72702136071,
+    "Tj_std_C": 2.27725684987052,
+    "valve_reversals": 370,
+    "n_power_events": 34,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_ml_L0_lstm": {
+    "peak_Tj_C": 56.15486546098159,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.29263888888888884,
+    "est_pump_energy_rel": 33904.27979055925,
+    "Tj_std_C": 2.262124511001775,
+    "valve_reversals": 276,
+    "n_power_events": 34,
+    "n_events_with_response": 1,
+    "response_time_median_s": 53.0,
+    "duration_s": 3600
+   }
+  },
+  "67194505864097-r9720335-n911952:0:0": {
+   "reactive_threshold": {
+    "peak_Tj_C": 49.139964180121055,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 4.737734274259215,
+    "valve_reversals": 0,
+    "n_power_events": 1,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "reactive_pi": {
+    "peak_Tj_C": 49.139964180121055,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 4.737734274259215,
+    "valve_reversals": 0,
+    "n_power_events": 1,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_persistence": {
+    "peak_Tj_C": 49.139964180121055,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 4.737734274259215,
+    "valve_reversals": 0,
+    "n_power_events": 1,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_oracle": {
+    "peak_Tj_C": 49.139964180121055,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 4.737734274259215,
+    "valve_reversals": 0,
+    "n_power_events": 1,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_ml_L0_lstm": {
+    "peak_Tj_C": 49.139964180121055,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 4.737734274259215,
+    "valve_reversals": 0,
+    "n_power_events": 1,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   }
+  },
+  "67194505864097-r9720335-n911952:1:0": {
+   "reactive_threshold": {
+    "peak_Tj_C": 48.81779238830901,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 4.722080812451891,
+    "valve_reversals": 0,
+    "n_power_events": 1,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "reactive_pi": {
+    "peak_Tj_C": 48.81779238830901,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 4.722080812451891,
+    "valve_reversals": 0,
+    "n_power_events": 1,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_persistence": {
+    "peak_Tj_C": 48.81779238830901,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 4.722080812451891,
+    "valve_reversals": 0,
+    "n_power_events": 1,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_oracle": {
+    "peak_Tj_C": 48.81779238830901,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 4.722080812451891,
+    "valve_reversals": 0,
+    "n_power_events": 1,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   },
+   "predictive_ml_L0_lstm": {
+    "peak_Tj_C": 48.81779238830901,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2,
+    "est_pump_energy_rel": 14745.600000012995,
+    "Tj_std_C": 4.722080812451891,
+    "valve_reversals": 0,
+    "n_power_events": 1,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 3600
+   }
+  },
+  "68382429293939-r4179716-n911952:0:0": {
+   "reactive_threshold": {
+    "peak_Tj_C": 46.749660622481755,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.19999999999999996,
+    "est_pump_energy_rel": 11132.928000005371,
+    "Tj_std_C": 1.05758219337192,
+    "valve_reversals": 0,
+    "n_power_events": 0,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 2718
+   },
+   "reactive_pi": {
+    "peak_Tj_C": 46.749660622481755,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.19999999999999996,
+    "est_pump_energy_rel": 11132.928000005371,
+    "Tj_std_C": 1.05758219337192,
+    "valve_reversals": 0,
+    "n_power_events": 0,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 2718
+   },
+   "predictive_persistence": {
+    "peak_Tj_C": 46.749660622481755,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.19999999999999996,
+    "est_pump_energy_rel": 11132.928000005371,
+    "Tj_std_C": 1.05758219337192,
+    "valve_reversals": 0,
+    "n_power_events": 0,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 2718
+   },
+   "predictive_oracle": {
+    "peak_Tj_C": 46.749660622481755,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.19999999999999996,
+    "est_pump_energy_rel": 11132.928000005371,
+    "Tj_std_C": 1.05758219337192,
+    "valve_reversals": 0,
+    "n_power_events": 0,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 2718
+   },
+   "predictive_ml_L0_lstm": {
+    "peak_Tj_C": 46.749660622481755,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.19999999999999996,
+    "est_pump_energy_rel": 11132.928000005371,
+    "Tj_std_C": 1.05758219337192,
+    "valve_reversals": 0,
+    "n_power_events": 0,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 2718
+   }
+  },
+  "68382429293939-r4179716-n911952:1:0": {
+   "reactive_threshold": {
+    "peak_Tj_C": 47.08366840641975,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.19999999999999996,
+    "est_pump_energy_rel": 11132.928000005371,
+    "Tj_std_C": 1.1014438733804592,
+    "valve_reversals": 0,
+    "n_power_events": 0,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 2718
+   },
+   "reactive_pi": {
+    "peak_Tj_C": 47.08366840641975,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.19999999999999996,
+    "est_pump_energy_rel": 11132.928000005371,
+    "Tj_std_C": 1.1014438733804592,
+    "valve_reversals": 0,
+    "n_power_events": 0,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 2718
+   },
+   "predictive_persistence": {
+    "peak_Tj_C": 47.08366840641975,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.19999999999999996,
+    "est_pump_energy_rel": 11132.928000005371,
+    "Tj_std_C": 1.1014438733804592,
+    "valve_reversals": 0,
+    "n_power_events": 0,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 2718
+   },
+   "predictive_oracle": {
+    "peak_Tj_C": 47.08366840641975,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.19999999999999996,
+    "est_pump_energy_rel": 11132.928000005371,
+    "Tj_std_C": 1.1014438733804592,
+    "valve_reversals": 0,
+    "n_power_events": 0,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 2718
+   },
+   "predictive_ml_L0_lstm": {
+    "peak_Tj_C": 47.08366840641975,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.19999999999999996,
+    "est_pump_energy_rel": 11132.928000005371,
+    "Tj_std_C": 1.1014438733804592,
+    "valve_reversals": 0,
+    "n_power_events": 0,
+    "n_events_with_response": 0,
+    "response_time_median_s": null,
+    "duration_s": 2718
+   }
+  },
+  "84670086588198-r8939293-n139058:0:0": {
+   "reactive_threshold": {
+    "peak_Tj_C": 61.18151046584528,
+    "overshoot_C": 2.0815104658452768,
+    "time_above_threshold_s": 538.0,
+    "mean_cooling_demand": 0.5003944444444443,
+    "est_pump_energy_rel": 198771.18340263885,
+    "Tj_std_C": 4.102285737713636,
+    "valve_reversals": 94,
+    "n_power_events": 48,
+    "n_events_with_response": 46,
+    "response_time_median_s": 48.0,
+    "duration_s": 3600
+   },
+   "reactive_pi": {
+    "peak_Tj_C": 59.565193689947726,
+    "overshoot_C": 0.4651936899477249,
+    "time_above_threshold_s": 9.0,
+    "mean_cooling_demand": 0.3483882686852136,
+    "est_pump_energy_rel": 53123.74985328974,
+    "Tj_std_C": 3.508874414354791,
+    "valve_reversals": 2102,
+    "n_power_events": 48,
+    "n_events_with_response": 14,
+    "response_time_median_s": 33.0,
+    "duration_s": 3600
+   },
+   "predictive_persistence": {
+    "peak_Tj_C": 57.285446027673046,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.44697222222222227,
+    "est_pump_energy_rel": 98108.13354222557,
+    "Tj_std_C": 3.2522849065754795,
+    "valve_reversals": 2051,
+    "n_power_events": 48,
+    "n_events_with_response": 48,
+    "response_time_median_s": 21.0,
+    "duration_s": 3600
+   },
+   "predictive_oracle": {
+    "peak_Tj_C": 58.562286752188434,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.4683611111111112,
+    "est_pump_energy_rel": 107267.21319567443,
+    "Tj_std_C": 3.2593678314493846,
+    "valve_reversals": 1870,
+    "n_power_events": 48,
+    "n_events_with_response": 28,
+    "response_time_median_s": 19.5,
+    "duration_s": 3600
+   },
+   "predictive_ml_L0_lstm": {
+    "peak_Tj_C": 57.597124390197784,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.44169444444444456,
+    "est_pump_energy_rel": 94371.21788324579,
+    "Tj_std_C": 3.238185047708718,
+    "valve_reversals": 1435,
+    "n_power_events": 48,
+    "n_events_with_response": 44,
+    "response_time_median_s": 22.0,
+    "duration_s": 3600
+   }
+  },
+  "84670086588198-r8939293-n139058:1:0": {
+   "reactive_threshold": {
+    "peak_Tj_C": 60.807124752178254,
+    "overshoot_C": 1.7071247521782524,
+    "time_above_threshold_s": 393.0,
+    "mean_cooling_demand": 0.4670333333333332,
+    "est_pump_energy_rel": 168611.71154782793,
+    "Tj_std_C": 4.139483930432835,
+    "valve_reversals": 91,
+    "n_power_events": 48,
+    "n_events_with_response": 39,
+    "response_time_median_s": 7.0,
+    "duration_s": 3600
+   },
+   "reactive_pi": {
+    "peak_Tj_C": 59.684463756499134,
+    "overshoot_C": 0.5844637564991331,
+    "time_above_threshold_s": 6.0,
+    "mean_cooling_demand": 0.3187880747514736,
+    "est_pump_energy_rel": 42879.2639780523,
+    "Tj_std_C": 3.5951166957220138,
+    "valve_reversals": 2018,
+    "n_power_events": 48,
+    "n_events_with_response": 5,
+    "response_time_median_s": 23.0,
+    "duration_s": 3600
+   },
+   "predictive_persistence": {
+    "peak_Tj_C": 57.23545058871779,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.40713888888888894,
+    "est_pump_energy_rel": 77351.4156145754,
+    "Tj_std_C": 3.3392004068195873,
+    "valve_reversals": 1711,
+    "n_power_events": 48,
+    "n_events_with_response": 47,
+    "response_time_median_s": 22.0,
+    "duration_s": 3600
+   },
+   "predictive_oracle": {
+    "peak_Tj_C": 58.66006084997704,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.42411111111111116,
+    "est_pump_energy_rel": 83463.13545700676,
+    "Tj_std_C": 3.3433901629576805,
+    "valve_reversals": 1847,
+    "n_power_events": 48,
+    "n_events_with_response": 19,
+    "response_time_median_s": 35.0,
+    "duration_s": 3600
+   },
+   "predictive_ml_L0_lstm": {
+    "peak_Tj_C": 57.13872547290133,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.4045833333333334,
+    "est_pump_energy_rel": 75166.64367767272,
+    "Tj_std_C": 3.324006618286892,
+    "valve_reversals": 919,
+    "n_power_events": 48,
+    "n_events_with_response": 43,
+    "response_time_median_s": 35.0,
+    "duration_s": 3600
+   }
+  },
+  "88197594960846-r4179716-n911952:0:0": {
+   "reactive_threshold": {
+    "peak_Tj_C": 59.38633162560606,
+    "overshoot_C": 0.28633162560605996,
+    "time_above_threshold_s": 8.0,
+    "mean_cooling_demand": 0.2068,
+    "est_pump_energy_rel": 16155.640675191737,
+    "Tj_std_C": 3.4059815407534644,
+    "valve_reversals": 13,
+    "n_power_events": 3,
+    "n_events_with_response": 1,
+    "response_time_median_s": 55.0,
+    "duration_s": 3600
+   },
+   "reactive_pi": {
+    "peak_Tj_C": 58.09102229222896,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.23927902006051294,
+    "est_pump_energy_rel": 21731.47160712767,
+    "Tj_std_C": 3.1820424916492507,
+    "valve_reversals": 2114,
+    "n_power_events": 3,
+    "n_events_with_response": 1,
+    "response_time_median_s": 23.0,
+    "duration_s": 3600
+   },
+   "predictive_persistence": {
+    "peak_Tj_C": 56.93111902572361,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.28994444444444445,
+    "est_pump_energy_rel": 33421.454123212585,
+    "Tj_std_C": 2.9587255987571184,
+    "valve_reversals": 866,
+    "n_power_events": 3,
+    "n_events_with_response": 2,
+    "response_time_median_s": 44.5,
+    "duration_s": 3600
+   },
+   "predictive_oracle": {
+    "peak_Tj_C": 56.693338054292276,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.29875,
+    "est_pump_energy_rel": 35552.4992375124,
+    "Tj_std_C": 2.9350979958286696,
+    "valve_reversals": 208,
+    "n_power_events": 3,
+    "n_events_with_response": 1,
+    "response_time_median_s": 34.0,
+    "duration_s": 3600
+   },
+   "predictive_ml_L0_lstm": {
+    "peak_Tj_C": 56.726410881391146,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.29574999999999996,
+    "est_pump_energy_rel": 34771.49152035298,
+    "Tj_std_C": 2.932153682944892,
+    "valve_reversals": 72,
+    "n_power_events": 3,
+    "n_events_with_response": 1,
+    "response_time_median_s": 43.0,
+    "duration_s": 3600
+   }
+  },
+  "88197594960846-r4179716-n911952:1:0": {
+   "reactive_threshold": {
+    "peak_Tj_C": 59.61714255612547,
+    "overshoot_C": 0.5171425561254708,
+    "time_above_threshold_s": 54.0,
+    "mean_cooling_demand": 0.2454333333333334,
+    "est_pump_energy_rel": 26963.596495700334,
+    "Tj_std_C": 3.4795796950082942,
+    "valve_reversals": 55,
+    "n_power_events": 7,
+    "n_events_with_response": 5,
+    "response_time_median_s": 46.0,
+    "duration_s": 3600
+   },
+   "reactive_pi": {
+    "peak_Tj_C": 58.37041204065164,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.2532476175304581,
+    "est_pump_energy_rel": 24633.4859070916,
+    "Tj_std_C": 3.184120715364335,
+    "valve_reversals": 2144,
+    "n_power_events": 7,
+    "n_events_with_response": 5,
+    "response_time_median_s": 22.0,
+    "duration_s": 3600
+   },
+   "predictive_persistence": {
+    "peak_Tj_C": 56.79288279233881,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.30333333333333334,
+    "est_pump_energy_rel": 37035.80093395195,
+    "Tj_std_C": 2.9741405797759097,
+    "valve_reversals": 908,
+    "n_power_events": 7,
+    "n_events_with_response": 3,
+    "response_time_median_s": 44.0,
+    "duration_s": 3600
+   },
+   "predictive_oracle": {
+    "peak_Tj_C": 56.68057746238004,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.30919444444444444,
+    "est_pump_energy_rel": 38534.536437598654,
+    "Tj_std_C": 2.96935124668429,
+    "valve_reversals": 746,
+    "n_power_events": 7,
+    "n_events_with_response": 2,
+    "response_time_median_s": 38.5,
+    "duration_s": 3600
+   },
+   "predictive_ml_L0_lstm": {
+    "peak_Tj_C": 56.89935195915156,
+    "overshoot_C": 0.0,
+    "time_above_threshold_s": 0.0,
+    "mean_cooling_demand": 0.29749999999999993,
+    "est_pump_energy_rel": 35276.02479555499,
+    "Tj_std_C": 2.993526001408637,
+    "valve_reversals": 75,
+    "n_power_events": 7,
+    "n_events_with_response": 2,
+    "response_time_median_s": 48.5,
+    "duration_s": 3600
+   }
+  }
+ },
+ "runtime_s": 554.0
+}

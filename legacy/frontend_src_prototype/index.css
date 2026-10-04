@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  background-color: #0a0e17;
+  color: white;
+  overflow: hidden;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+.holographic-panel {
+  background: rgba(10, 14, 23, 0.8);
+  border: 1px solid #00e5ff;
+  box-shadow: 0 0 10px rgba(0, 229, 255, 0.3);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: #00e5ff;
+  font-family: 'JetBrains Mono', monospace;
+  text-shadow: 0 0 5px rgba(0, 229, 255, 0.5);
+  pointer-events: none;
+}

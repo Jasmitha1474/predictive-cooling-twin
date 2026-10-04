@@ -1,0 +1,19 @@
+# dependencies / builds
+node_modules/
+frontend/dist/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+.vercel/
+.railway/
+# local data (never commit dataset files; MIT Supercloud is CC BY-NC-ND 4.0)
+backend/data/
+work/
+*.parquet
+!research/reports/subset_run/subset_job_list.parquet
+# per-second traces derived from the dataset (kept locally only)
+research/reports/*timeseries*.json
+research/reports/subset_run/*timeseries*.json
+# editor / tool state
+.claude/
